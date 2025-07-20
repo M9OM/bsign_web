@@ -1,0 +1,15 @@
+<div class="alert">
+  <%= svg_icon('info_circle', class: 'w-6 h-6') %>
+  <div>
+    <p class="font-bold">
+      <%= t('bulk_send_from_excel_xlsx_or_csv') %>
+    </p>
+    <p class="text-gray-700">
+      <%= t('unlock_with_Bsign_pro') %>
+      <br>
+      <a class="link font-medium" target="_blank" href="<%= Bsign.multitenant? ? console_redirect_index_path(redir: "#{Bsign::CONSOLE_URL}/plans") : "#{Bsign::CLOUD_URL}/sign_up?#{{ redir: "#{Bsign::CONSOLE_URL}/on_premises" }.to_query}" %>" data-turbo="false">
+        <%= t('learn_more') %>
+      </a>
+    </p>
+  </div>
+</div>

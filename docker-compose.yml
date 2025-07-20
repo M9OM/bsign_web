@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  app:
+    image: docuseal/docuseal:latest
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./docuseal:/data/docuseal
+    environment:
+      - FORCE_SSL=false
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/docuseal
+
+  postgres:
+    image: postgres:15
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: docuseal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  caddy:
+    image: caddy:latest
+    command: caddy reverse-proxy --from :80 --to app:3000
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - .:/data
+volumes:
+  pgdata:
