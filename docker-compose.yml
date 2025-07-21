@@ -2,11 +2,11 @@ version: '3.8'
 
 services:
   app:
-    build: .  
+    build: .  # ✅ استخدم Dockerfile الحالي لبناء المشروع
     ports:
       - 3000:3000
     volumes:
-      - ./docuseal:/data/docuseal
+      - ./docuseal:/data/docuseal  # مجلد البيانات (الوثائق المرفوعة والتوقيعات)
     environment:
       - FORCE_SSL=${HOST}
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/docuseal
