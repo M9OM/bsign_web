@@ -1,3 +1,4 @@
+### Stage 1: Download fonts and pdfium
 FROM ruby:3.4.2-alpine AS download
 
 WORKDIR /fonts
@@ -15,6 +16,8 @@ RUN apk --no-cache add fontforge wget && \
 
 RUN fontforge -lang=py -c 'font1 = fontforge.open("FreeSans.ttf"); font2 = fontforge.open("NotoSansSymbols2-Regular.ttf"); font1.mergeFonts(font2); font1.generate("FreeSans.ttf")'
 
+
+### Stage 2: Webpack / Assets compilation
 FROM ruby:3.4.2-alpine AS webpack
 
 ENV RAILS_ENV=production
@@ -25,22 +28,13 @@ WORKDIR /app
 RUN apk add --no-cache nodejs yarn git build-base && \
     gem install shakapacker
 
-COPY ./package.json ./yarn.lock ./
+COPY . .
 
-RUN yarn install --network-timeout 1000000
+RUN yarn install --network-timeout 1000000 && \
+    ./bin/shakapacker
 
-COPY ./bin/shakapacker ./bin/shakapacker
-COPY ./config/webpack ./config/webpack
-COPY ./config/shakapacker.yml ./config/shakapacker.yml
-COPY ./postcss.config.js ./postcss.config.js
-COPY ./tailwind.config.js ./tailwind.config.js
-COPY ./tailwind.form.config.js ./tailwind.form.config.js
-COPY ./tailwind.application.config.js ./tailwind.application.config.js
-COPY ./app/javascript ./app/javascript
-COPY ./app/views ./app/views
 
-RUN echo "gem 'shakapacker'" > Gemfile && ./bin/shakapacker
-
+### Stage 3: Final app
 FROM ruby:3.4.2-alpine AS app
 
 ENV RAILS_ENV=production
@@ -50,8 +44,16 @@ ENV OPENSSL_CONF=/app/openssl_legacy.cnf
 
 WORKDIR /app
 
-RUN echo '@edge https://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories && apk add --no-cache sqlite-dev libpq-dev mariadb-dev vips-dev@edge redis libheif@edge vips-heif@edge gcompat ttf-freefont && mkdir /fonts && rm /usr/share/fonts/freefont/FreeSans.otf
+# Add edge repo for some packages
+RUN echo '@edge https://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories && \
+    apk add --no-cache \
+    sqlite-dev libpq-dev mariadb-dev \
+    vips-dev@edge redis \
+    libheif@edge vips-heif@edge gcompat ttf-freefont build-base && \
+    mkdir -p /fonts && \
+    rm -f /usr/share/fonts/freefont/FreeSans.otf
 
+# Enable OpenSSL legacy provider
 RUN echo $'.include = /etc/ssl/openssl.cnf\n\
 \n\
 [provider_sect]\n\
@@ -62,34 +64,28 @@ legacy = legacy_sect\n\
 activate = 1\n\
 \n\
 [legacy_sect]\n\
-activate = 1' >> /app/openssl_legacy.cnf
+activate = 1' > /app/openssl_legacy.cnf
 
-COPY ./Gemfile ./Gemfile.lock ./
+COPY Gemfile Gemfile.lock ./
+RUN bundle install && \
+    apk del build-base && \
+    rm -rf ~/.bundle /usr/local/bundle/cache && \
+    ruby -e "puts Dir['/usr/local/bundle/**/{spec,rdoc,resources/shared,resources/collation,resources/locales}']" | xargs rm -rf
 
-RUN apk add --no-cache build-base && bundle install && apk del --no-cache build-base && rm -rf ~/.bundle /usr/local/bundle/cache && ruby -e "puts Dir['/usr/local/bundle/**/{spec,rdoc,resources/shared,resources/collation,resources/locales}']" | xargs rm -rf
+COPY . .
 
-COPY ./bin ./bin
-COPY ./app ./app
-COPY ./config ./config
-COPY ./db/migrate ./db/migrate
-COPY ./log ./log
-COPY ./lib ./lib
-COPY ./public ./public
-COPY ./tmp ./tmp
-COPY LICENSE README.md Rakefile config.ru .version ./
-COPY .version ./public/version
-
-COPY --from=download /fonts/GoNotoKurrent-Regular.ttf /fonts/GoNotoKurrent-Bold.ttf /fonts/DancingScript-Regular.otf /fonts/OFL.txt /fonts
-COPY --from=download /fonts/FreeSans.ttf /usr/share/fonts/freefont
+# Copy fonts and pdfium from download stage
+COPY --from=download /fonts/*.ttf /fonts/
+COPY --from=download /fonts/OFL.txt /fonts/
+COPY --from=download /fonts/FreeSans.ttf /usr/share/fonts/freefont/
 COPY --from=download /pdfium-linux/lib/libpdfium.so /usr/lib/libpdfium.so
 COPY --from=download /pdfium-linux/licenses/pdfium.txt /usr/lib/libpdfium-LICENSE.txt
+
+# Copy compiled packs
 COPY --from=webpack /app/public/packs ./public/packs
 
 RUN ln -s /fonts /app/public/fonts
 RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
-WORKDIR /data/docuseal
-ENV WORKDIR=/data/docuseal
-
 EXPOSE 3000
-CMD ["/app/bin/bundle", "exec", "puma", "-C", "/app/config/puma.rb", "--dir", "/app"]
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
