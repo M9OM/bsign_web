@@ -1,6 +1,7 @@
 FROM ruby:3.2
 
 WORKDIR /app
+ARG CACHE_BUST=2
 
 # انسخ كل ملفات مشروعك المعدل
 COPY . .
