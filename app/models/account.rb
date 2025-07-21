@@ -64,4 +64,9 @@ class Account < ApplicationRecord
     super || build_default_template_folder(name: TemplateFolder::DEFAULT_NAME,
                                            author_id: users.minimum(:id)).tap(&:save!)
   end
+
+  # ✅ Force "Pro" mode always
+  def plan
+    'pro'
+  end
 end

@@ -724,7 +724,7 @@ en: &en
   submission_created_by_email_html: '<b>Submission created</b> by %{email}'
   submission_created_by_email_via_source_html: '<b>Submission created</b> by %{email} via %{source}'
   submission_created_via_source_html: '<b>Submission created</b> via %{source}'
-  pro_user_seats_used: Pro user seats used
+  pro_user_seats_used: user seats used
   manage_plan: Manage plan
   this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: This submission has multiple signers, which prevents the use of a sharing link as it's unclear which signer is responsible for specific fields. To resolve this, follow this <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guide</a> to define the default signer details.
   welcome_to_docuseal: Welcome to DocuSeal
@@ -1323,7 +1323,7 @@ es: &es
   share_template_with_test_mode: Compartir plantilla con el modo de prueba
   share_template_with_all_tenants: Compartir plantilla con todos los inquilinos
   use_following_placeholders_text_: 'Usa los siguientes marcadores de posición:'
-  users_count_total_users_count_pro_users_limit_was_reached_to_invite_additional_users_please_purchase_more_pro_user_seats_via_the_manage_plan_button: 'Se alcanzó el límite de %{users_count}/%{total_users_count} usuarios Pro. Para invitar a más usuarios, compra más plazas Pro usando el botón "Gestionar plan".'
+  users_count_total_users_count_pro_users_limit_was_reached_to_invite_additional_users_please_purchase_more_pro_user_seats_via_the_manage_plan_button: 'Se alcanzó el límite de %{users_count}/%{total_users_count} usuarios Pro. Para invitar a más usuarios, compra más plazas usando el botón "Gestionar plan".'
   move_into_folder: Mover a la carpeta
   new_folder_name: Nuevo nombre de la carpeta
   exit_preview: Salir de la vista previa
