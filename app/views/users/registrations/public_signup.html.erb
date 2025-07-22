@@ -1,0 +1,11 @@
+<%= render 'shared/page_wrapper', title: t('sign_up') do %>
+  <div class="max-w-xl mx-auto">
+    <%= render 'users/form', user: @user %>
+
+    <div class="mt-6">
+      <%= form_with model: @user, url: signup_path, local: true do |f| %>
+        <%= f.submit t('sign_up'), class: 'base-button w-full' %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

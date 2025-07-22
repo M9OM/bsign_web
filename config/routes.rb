@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   end
 
   root 'dashboard#index'
+get  '/signup', to: 'users/registrations#public_signup'
+post '/signup', to: 'users/registrations#create'
 
   get 'up' => 'rails/health#show'
   get 'manifest' => 'pwa#manifest'
@@ -200,3 +202,4 @@ Rails.application.routes.draw do
 
   ActiveSupport.run_load_hooks(:routes, self)
 end
+
