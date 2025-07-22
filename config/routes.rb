@@ -10,14 +10,12 @@ Rails.application.routes.draw do
   end
 
   root 'dashboard#index'
-get  '/signup', to: 'users/registrations#public_signup'
-post '/signup', to: 'users/registrations#create'
 
   get 'up' => 'rails/health#show'
   get 'manifest' => 'pwa#manifest'
 
   devise_for :users,
-             path: '/', only: %i[sessions registrations passwords omniauth_callbacks],
+             path: '/', only: %i[sessions passwords omniauth_callbacks],
              controllers: begin
                options = { sessions: 'sessions', passwords: 'passwords' }
                options[:omniauth_callbacks] = 'omniauth_callbacks' if User.devise_modules.include?(:omniauthable)
@@ -202,4 +200,3 @@ post '/signup', to: 'users/registrations#create'
 
   ActiveSupport.run_load_hooks(:routes, self)
 end
-
