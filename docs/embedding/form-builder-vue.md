@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { DocusealBuilder } from '@docuseal/vue'
+import { DocusealBuilder } from '@bsign/vue'
 
 export default {
   name: 'App',
@@ -20,7 +20,7 @@ export default {
     return { token: '' }
   },
   mounted () {
-    fetch('/api/docuseal/builder_token', {
+    fetch('/api/bsign/builder_token', {
       method: 'POST'
     }).then(async (resp) => {
       const data = await resp.json()
@@ -104,7 +104,7 @@ const token = jwt.sign({
   "host": {
     "type": "string",
     "required": false,
-    "description": "DocuSeal host domain name. Only use this attribute if you are using the on-premises DocuSeal installation or docuseal.eu Cloud.",
+    "description": "bsign host domain name. Only use this attribute if you are using the on-premises bsign installation or bsign.eu Cloud.",
     "example": "yourdomain.com"
   },
   "custom-button": {
@@ -478,7 +478,7 @@ const token = jwt.sign({
     "type": "object",
     "required": false,
     "default": "{}",
-    "description": "Object that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/docuseal/blob/master/app/javascript/template_builder/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">template_builder/i18n.js</a> for available i18n keys."
+    "description": "Object that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/bsign/blob/master/app/javascript/template_builder/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">template_builder/i18n.js</a> for available i18n keys."
   },
   "background-color": {
     "type": "string",

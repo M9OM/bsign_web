@@ -9,7 +9,7 @@ module ActionMailerConfigsInterceptor
   def delivering_email(message)
     return message unless Rails.env.production?
 
-    if Docuseal.demo?
+    if bsign.demo?
       message.delivery_method(:test)
 
       return message
@@ -27,7 +27,7 @@ module ActionMailerConfigsInterceptor
       return message
     end
 
-    unless Docuseal.multitenant?
+    unless bsign.multitenant?
       email_configs = EncryptedConfig.order(:account_id).find_by(key: EncryptedConfig::EMAIL_SMTP_KEY)
 
       if email_configs

@@ -3,13 +3,13 @@
 ### Example Code
 
 ```javascript
-<script src="https://cdn.docuseal.com/js/form.js"></script>
+<script src="https://cdn.bsign.com/js/form.js"></script>
 
-<docuseal-form
+<bsign-form
   id="docusealForm"
-  data-src="https://docuseal.com/d/{{template_slug}}"
+  data-src="https://bsign.com/d/{{template_slug}}"
   data-email="{{signer_email}}">
-</docuseal-form>
+</bsign-form>
 
 <script>
   window.docusealForm.addEventListener('completed', (e) => e.detail)
@@ -109,7 +109,7 @@
     "type": "string",
     "required": false,
     "default": "{}",
-    "description": "JSON encoded string that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/docuseal/blob/master/app/javascript/submission_form/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">submission_form/i18n.js</a> for available i18n keys."
+    "description": "JSON encoded string that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/bsign/blob/master/app/javascript/submission_form/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">submission_form/i18n.js</a> for available i18n keys."
   },
   "data-go-to-last": {
     "type": "boolean",
@@ -238,7 +238,7 @@
     "type": "string",
     "required": false,
     "description": "URL to redirect to after the submission completion.",
-    "example": "https://docuseal.com/success"
+    "example": "https://bsign.com/success"
   },
   "data-completed-message-title": {
     "type": "string",
@@ -281,24 +281,24 @@
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered on initializing the form component.",
-    "example": "document.querySelector('docuseal-form').addEventListener('init', () => console.log('init'))"
+    "example": "document.querySelector('bsign-form').addEventListener('init', () => console.log('init'))"
   },
   "load": {
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered on loading the form data.",
-    "example": "document.querySelector('docuseal-form').addEventListener('load', (e) => e.detail)"
+    "example": "document.querySelector('bsign-form').addEventListener('load', (e) => e.detail)"
   },
   "completed": {
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered after form completion.",
-    "example": "document.querySelector('docuseal-form').addEventListener('completed', (e) => e.detail)"
+    "example": "document.querySelector('bsign-form').addEventListener('completed', (e) => e.detail)"
   },
   "declined": {
     "type": "event",
     "description": "Custom event to be triggered after form decline.",
-    "example": "document.querySelector('docuseal-form').addEventListener('declined', (e) => e.detail)"
+    "example": "document.querySelector('bsign-form').addEventListener('declined', (e) => e.detail)"
   }
 }
 ```

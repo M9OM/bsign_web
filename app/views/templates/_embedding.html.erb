@@ -55,10 +55,10 @@
 <div id="js_1" class="block my-4">
     <div class="mockup-code overflow-hidden pb-0 mt-4">
       <span class="top-0 right-0 absolute flex">
-        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{Docuseal::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
-        <clipboard-copy data-text="<script src=&quot;<%= Docuseal::CDN_URL %>/js/form.js&quot;></script>
+        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{bsign::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
+        <clipboard-copy data-text="<script src=&quot;<%= bsign::CDN_URL %>/js/form.js&quot;></script>
 
-<docuseal-form data-src=&quot;<%= start_form_url(slug: template.slug) %>&quot;></docuseal-form>
+<bsign-form data-src=&quot;<%= start_form_url(slug: template.slug) %>&quot;></bsign-form>
 ">
   <label class="btn btn-ghost text-gray-100">
     <input type="radio" class="peer hidden">
@@ -78,9 +78,9 @@
 </clipboard-copy>
 
       </span>
-      <pre class="before:!m-0 pl-6 pb-4 overflow-auto"><code class="overflow-hidden w-full"><span style="color: #f4bf75">&lt;script </span><span style="color: #6a9fb5">src=</span><span style="color: #90a959">"<%= Docuseal::CDN_URL %>/js/form.js"</span><span style="color: #f4bf75">&gt;&lt;/script&gt;</span>
+      <pre class="before:!m-0 pl-6 pb-4 overflow-auto"><code class="overflow-hidden w-full"><span style="color: #f4bf75">&lt;script </span><span style="color: #6a9fb5">src=</span><span style="color: #90a959">"<%= bsign::CDN_URL %>/js/form.js"</span><span style="color: #f4bf75">&gt;&lt;/script&gt;</span>
 
-<span style="color: #f4bf75">&lt;docuseal-form</span> <span style="color: #6a9fb5">data-src=</span><span style="color: #90a959">"<%= start_form_url(slug: template.slug) %>"</span><span style="color: #f4bf75">&gt;</span><span style="color: #f4bf75">&lt;/docuseal-form&gt;</span>
+<span style="color: #f4bf75">&lt;bsign-form</span> <span style="color: #6a9fb5">data-src=</span><span style="color: #90a959">"<%= start_form_url(slug: template.slug) %>"</span><span style="color: #f4bf75">&gt;</span><span style="color: #f4bf75">&lt;/bsign-form&gt;</span>
 </code></pre>
     </div>
 
@@ -88,9 +88,9 @@
 <div id="react_1" class="block my-4 hidden">
     <div class="mockup-code overflow-hidden pb-0 mt-4">
       <span class="top-0 right-0 absolute flex">
-        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{Docuseal::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
+        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{bsign::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
         <clipboard-copy data-text="import React from &quot;react&quot;
-import { DocusealForm } from '@docuseal/react'
+import { DocusealForm } from '@bsign/react'
 
 export function App() {
   return (
@@ -119,7 +119,7 @@ export function App() {
 
       </span>
       <pre class="before:!m-0 pl-6 pb-4 overflow-auto"><code class="overflow-hidden w-full"><span style="color: #aa759f">import</span> <span style="color: #d0d0d0;background-color: #151515">React</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">"</span><span style="color: #90a959">react</span><span style="color: #90a959">"</span>
-<span style="color: #aa759f">import</span> <span style="color: #d0d0d0">{</span> <span style="color: #d0d0d0;background-color: #151515">DocusealForm</span> <span style="color: #d0d0d0">}</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">'</span><span style="color: #90a959">@docuseal/react</span><span style="color: #90a959">'</span>
+<span style="color: #aa759f">import</span> <span style="color: #d0d0d0">{</span> <span style="color: #d0d0d0;background-color: #151515">DocusealForm</span> <span style="color: #d0d0d0">}</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">'</span><span style="color: #90a959">@bsign/react</span><span style="color: #90a959">'</span>
 
 <span style="color: #aa759f">export</span> <span style="color: #d28445">function</span> <span style="color: #d0d0d0;background-color: #151515">App</span><span style="color: #d0d0d0">()</span> <span style="color: #d0d0d0">{</span>
   <span style="color: #aa759f">return </span><span style="color: #d0d0d0">(</span>
@@ -135,7 +135,7 @@ export function App() {
 <div id="vue_1" class="block my-4 hidden">
     <div class="mockup-code overflow-hidden pb-0 mt-4">
       <span class="top-0 right-0 absolute flex">
-        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{Docuseal::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
+        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{bsign::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
         <clipboard-copy data-text="<template>
   <DocusealForm
     :src=&quot;'<%= start_form_url(slug: template.slug) %>'&quot;
@@ -143,7 +143,7 @@ export function App() {
 </template>
 
 <script>
-import { DocusealForm } from '@docuseal/vue'
+import { DocusealForm } from '@bsign/vue'
 
 export default {
   name: 'App',
@@ -178,7 +178,7 @@ export default {
 <span style="color: #f4bf75">&lt;/template&gt;</span>
 
 <span style="color: #f4bf75">&lt;</span><span style="color: #f4bf75">script</span><span style="color: #f4bf75">&gt;</span>
-<span style="color: #aa759f">import</span> <span style="color: #d0d0d0">{</span> <span style="color: #d0d0d0;background-color: #151515">DocusealForm</span> <span style="color: #d0d0d0">}</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">'</span><span style="color: #90a959">@docuseal/vue</span><span style="color: #90a959">'</span>
+<span style="color: #aa759f">import</span> <span style="color: #d0d0d0">{</span> <span style="color: #d0d0d0;background-color: #151515">DocusealForm</span> <span style="color: #d0d0d0">}</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">'</span><span style="color: #90a959">@bsign/vue</span><span style="color: #90a959">'</span>
 
 <span style="color: #aa759f">export</span> <span style="color: #aa759f">default</span> <span style="color: #d0d0d0">{</span>
   <span style="color: #6a9fb5">name</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">'</span><span style="color: #90a959">App</span><span style="color: #90a959">'</span><span style="color: #d0d0d0">,</span>
@@ -193,9 +193,9 @@ export default {
 <div id="angular_1" class="block my-4 hidden">
     <div class="mockup-code overflow-hidden pb-0 mt-4">
       <span class="top-0 right-0 absolute flex">
-        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{Docuseal::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
+        <%= link_to t('learn_more'), console_redirect_index_path(redir: "#{bsign::CONSOLE_URL}/embedding/form"), target: '_blank', data: { turbo: false }, class: 'btn btn-ghost text-gray-100 flex', rel: 'noopener' %>
         <clipboard-copy data-text="import { Component } from '@angular/core';
-import { DocusealFormComponent } from '@docuseal/angular';
+import { DocusealFormComponent } from '@bsign/angular';
 
 @Component({
   selector: 'app-root',
@@ -203,9 +203,9 @@ import { DocusealFormComponent } from '@docuseal/angular';
   imports: [DocusealFormComponent],
   template: `
     <div class=&quot;app&quot;>
-      <docuseal-form
+      <bsign-form
         [src]=&quot;'<%= start_form_url(slug: template.slug) %>'&quot;>
-      </docuseal-form>
+      </bsign-form>
     </div>
   `
 })
@@ -230,7 +230,7 @@ export class AppComponent {}
 
       </span>
       <pre class="before:!m-0 pl-6 pb-4 overflow-auto"><code class="overflow-hidden w-full"><span style="color: #aa759f">import</span> <span style="color: #d0d0d0">{</span> <span style="color: #d0d0d0;background-color: #151515">Component</span> <span style="color: #d0d0d0">}</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">'</span><span style="color: #90a959">@angular/core</span><span style="color: #90a959">'</span><span style="color: #d0d0d0">;</span>
-<span style="color: #aa759f">import</span> <span style="color: #d0d0d0">{</span> <span style="color: #d0d0d0;background-color: #151515">DocusealFormComponent</span> <span style="color: #d0d0d0">}</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">'</span><span style="color: #90a959">@docuseal/angular</span><span style="color: #90a959">'</span><span style="color: #d0d0d0">;</span>
+<span style="color: #aa759f">import</span> <span style="color: #d0d0d0">{</span> <span style="color: #d0d0d0;background-color: #151515">DocusealFormComponent</span> <span style="color: #d0d0d0">}</span> <span style="color: #aa759f">from</span> <span style="color: #90a959">'</span><span style="color: #90a959">@bsign/angular</span><span style="color: #90a959">'</span><span style="color: #d0d0d0">;</span>
 
 <span style="color: #d0d0d0">@</span><span style="color: #d0d0d0;background-color: #151515">Component</span><span style="color: #d0d0d0">({</span>
   <span style="color: #6a9fb5">selector</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">'</span><span style="color: #90a959">app-root</span><span style="color: #90a959">'</span><span style="color: #d0d0d0">,</span>
@@ -238,9 +238,9 @@ export class AppComponent {}
   <span style="color: #6a9fb5">imports</span><span style="color: #d0d0d0">:</span> <span style="color: #d0d0d0">[</span><span style="color: #d0d0d0;background-color: #151515">DocusealFormComponent</span><span style="color: #d0d0d0">],</span>
   <span style="color: #6a9fb5">template</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">`
     &lt;div class="app"&gt;
-      &lt;docuseal-form
+      &lt;bsign-form
         [src]="'<%= start_form_url(slug: template.slug) %>'"&gt;
-      &lt;/docuseal-form&gt;
+      &lt;/bsign-form&gt;
     &lt;/div&gt;
   `</span>
 <span style="color: #d0d0d0">})</span>

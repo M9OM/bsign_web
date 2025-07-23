@@ -3,9 +3,9 @@
 The API endpoint provides the ability to retrieve a list of available document templates.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->listTemplates(['limit' => 10]);
+$bsign->listTemplates(['limit' => 10]);
 ```
 
 ```json
@@ -103,9 +103,9 @@ $docuseal->listTemplates(['limit' => 10]);
 The API endpoint provides the functionality to retrieve information about a document template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->getTemplate(1000001);
+$bsign->getTemplate(1000001);
 ```
 
 ```json
@@ -140,9 +140,9 @@ $docuseal->getTemplate(1000001);
 The API endpoint allows you to archive a document template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->archiveTemplate(1000001);
+$bsign->archiveTemplate(1000001);
 ```
 
 ```json
@@ -177,9 +177,9 @@ $docuseal->archiveTemplate(1000001);
 The API endpoint provides the functionality to move a document template to a different folder and update the name of the template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->updateTemplate(1000001, [
+$bsign->updateTemplate(1000001, [
   'name' => 'New Document Name',
   'folder_name' => 'New Folder'
 ]);
@@ -254,9 +254,9 @@ $docuseal->updateTemplate(1000001, [
 The API endpoint provides the ability to retrieve a list of available submissions.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->listSubmissions(['limit' => 10]);
+$bsign->listSubmissions(['limit' => 10]);
 ```
 
 ```json
@@ -366,12 +366,12 @@ $docuseal->listSubmissions(['limit' => 10]);
 
 ### Create a submission
 
-This API endpoint allows you to create signature requests (submissions) for a document template and send them to the specified submitters (signers).<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/send-documents-for-signature-via-api" class="link">Send documents for signature via API</a><br><a href="https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api" class="link">Pre-fill PDF document form fields with API</a>
+This API endpoint allows you to create signature requests (submissions) for a document template and send them to the specified submitters (signers).<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/send-documents-for-signature-via-api" class="link">Send documents for signature via API</a><br><a href="https://www.bsign.com/guides/pre-fill-pdf-document-form-fields-with-api" class="link">Pre-fill PDF document form fields with API</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createSubmission([
+$bsign->createSubmission([
   'template_id' => 1000001,
   'send_email' => true,
   'submitters' => [
@@ -409,7 +409,7 @@ $docuseal->createSubmission([
           "properties": {
             "template_id": {
               "type": "integer",
-              "description": "The unique identifier of the template. Document template forms can be created via the Web UI, <a href=\"https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form\" class=\"link\">PDF and DOCX API</a>, or <a href=\"https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api\" class=\"link\">HTML API</a>.",
+              "description": "The unique identifier of the template. Document template forms can be created via the Web UI, <a href=\"https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form\" class=\"link\">PDF and DOCX API</a>, or <a href=\"https://www.bsign.com/guides/create-pdf-document-fillable-form-with-html-api\" class=\"link\">HTML API</a>.",
               "example": 1000001
             },
             "send_email": {
@@ -727,9 +727,9 @@ $docuseal->createSubmission([
 The API endpoint provides the functionality to retrieve information about a submission.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->getSubmission(1001);
+$bsign->getSubmission(1001);
 ```
 
 ```json
@@ -764,9 +764,9 @@ $docuseal->getSubmission(1001);
 The API endpoint allows you to archive a submission.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->archiveSubmission(1001);
+$bsign->archiveSubmission(1001);
 ```
 
 ```json
@@ -801,9 +801,9 @@ $docuseal->archiveSubmission(1001);
 This endpoint returns a list of partially filled documents for a submission. If the submission has been completed, the final signed documents are returned.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->getSubmissionDocuments(1001);
+$bsign->getSubmissionDocuments(1001);
 ```
 
 ```json
@@ -838,11 +838,11 @@ $docuseal->getSubmissionDocuments(1001);
 This API endpoint allows you to create submissions for a document template and send them to the specified email addresses. This is a simplified version of the POST /submissions API to be used with Zapier or other automation tools.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createSubmissionFromEmails([
+$bsign->createSubmissionFromEmails([
   'template_id' => 1000001,
-  'emails' => 'hi@docuseal.com, example@docuseal.com'
+  'emails' => 'hi@bsign.com, example@bsign.com'
 ]);
 ```
 
@@ -911,9 +911,9 @@ $docuseal->createSubmissionFromEmails([
 The API endpoint provides functionality to retrieve information about a submitter, along with the submitter documents and field values.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->getSubmitter(500001);
+$bsign->getSubmitter(500001);
 ```
 
 ```json
@@ -945,12 +945,12 @@ $docuseal->getSubmitter(500001);
 
 ### Update a submitter
 
-The API endpoint allows you to update submitter details, pre-fill or update field values and re-send emails.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api#automatically_sign_documents_via_api" class="link">Automatically sign documents via API</a>
+The API endpoint allows you to update submitter details, pre-fill or update field values and re-send emails.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/pre-fill-pdf-document-form-fields-with-api#automatically_sign_documents_via_api" class="link">Automatically sign documents via API</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->updateSubmitter(500001, [
+$bsign->updateSubmitter(500001, [
   'email' => 'john.doe@example.com',
   'fields' => [
     [
@@ -1225,9 +1225,9 @@ $docuseal->updateSubmitter(500001, [
 The API endpoint provides the ability to retrieve a list of submitters.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->listSubmitters(['limit' => 10]);
+$bsign->listSubmitters(['limit' => 10]);
 ```
 
 ```json
@@ -1338,9 +1338,9 @@ $docuseal->listSubmitters(['limit' => 10]);
 The API endpoint allows you to add, remove or replace documents in the template with provided PDF/DOCX file or HTML content.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->updateTemplateDocuments(1000001, [
+$bsign->updateTemplateDocuments(1000001, [
   'documents' => [
     [
       'file' => 'string'
@@ -1436,9 +1436,9 @@ $docuseal->updateTemplateDocuments(1000001, [
 The API endpoint allows you to clone existing template into a new template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->cloneTemplate(1000001, [
+$bsign->cloneTemplate(1000001, [
   'name' => 'Cloned Template'
 ]);
 ```
@@ -1497,12 +1497,12 @@ $docuseal->cloneTemplate(1000001, [
 
 ### Create a template from HTML
 
-The API endpoint provides the functionality to seamlessly generate a PDF document template by utilizing the provided HTML content while incorporating pre-defined fields.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
+The API endpoint provides the functionality to seamlessly generate a PDF document template by utilizing the provided HTML content while incorporating pre-defined fields.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createTemplateFromHtml([
+$bsign->createTemplateFromHtml([
   'html' => '<p>Lorem Ipsum is simply dummy text of the
 <text-field
   name="Industry"
@@ -1622,13 +1622,13 @@ and typesetting industry</p>
 
 ### Create a template from Word DOCX
 
-The API endpoint provides the functionality to create a fillable document template for existing Microsoft Word document. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.docx" target="_blank" class="link font-bold" >https://www.docuseal.com/examples/fieldtags.docx</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create a fillable document template for existing Microsoft Word document. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.docx" target="_blank" class="link font-bold" >https://www.bsign.com/examples/fieldtags.docx</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createTemplateFromDocx([
+$bsign->createTemplateFromDocx([
   'name' => 'Test DOCX',
   'documents' => [
     [
@@ -1900,13 +1900,13 @@ $docuseal->createTemplateFromDocx([
 
 ### Create a template from existing PDF
 
-The API endpoint provides the functionality to create a fillable document template for existing PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.docuseal.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create a fillable document template for existing PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.bsign.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createTemplateFromPdf([
+$bsign->createTemplateFromPdf([
   'name' => 'Test PDF',
   'documents' => [
     [
@@ -2208,9 +2208,9 @@ $docuseal->createTemplateFromPdf([
 The API endpoint allows you to merge multiple templates with documents and fields into a new combined template.
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->mergeTemplates([
+$bsign->mergeTemplates([
   'template_ids' => [
     321,
     432
@@ -2292,13 +2292,13 @@ $docuseal->mergeTemplates([
 
 ### Create a submission from PDF
 
-The API endpoint provides the functionality to create one-off submission request from a PDF or DOCX file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.docuseal.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create one-off submission request from a PDF or DOCX file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.bsign.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createSubmissionFromPdf([
+$bsign->createSubmissionFromPdf([
   'name' => 'Test Submission Document',
   'documents' => [
     [
@@ -2809,12 +2809,12 @@ $docuseal->createSubmissionFromPdf([
 
 ### Create a submission from HTML
 
-This API endpoint allows you to create a one-off submission request document using the provided HTML content, with special field tags rendered as a fillable and signable form.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
+This API endpoint allows you to create a one-off submission request document using the provided HTML content, with special field tags rendered as a fillable and signable form.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createSubmissionFromHtml([
+$bsign->createSubmissionFromHtml([
   'name' => 'Test Submission Document',
   'documents' => [
     [
@@ -3233,13 +3233,13 @@ and typesetting industry</p>
 
 ### Create a template from PDF
 
-The API endpoint provides the functionality to create a fillable document template for a PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.docuseal.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create a fillable document template for a PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.bsign.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```php
-$docuseal = new \Docuseal\Api('API_KEY', 'https://api.docuseal.com');
+$bsign = new \bsign\Api('API_KEY', 'https://api.bsign.com');
 
-$docuseal->createTemplateFromPdf([
+$bsign->createTemplateFromPdf([
   'name' => 'Test PDF',
   'documents' => [
     [

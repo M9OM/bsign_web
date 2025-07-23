@@ -57,15 +57,15 @@ en: &en
   team_access: Team access
   document_download_filename_format: Document download filename format
   document_name: Document Name
-  docuseal_trusted_signature: DocuSeal Trusted Signature
+  docuseal_trusted_signature: bsign Trusted Signature
   hello_name: Hello %{name}
   you_are_invited_to_product_name: You are invited to %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'You have been invited to %{account_name} %{product_name}. Please sign up using the link below:'
   sent_using_product_name_in_testing_mode_html: 'Sent using <a href="%{product_url}">%{product_name}</a> in testing mode'
   sent_using_product_name_free_document_signing_html: 'Sent using <a href="%{product_url}">%{product_name}</a> free document signing.'
-  sent_with_docuseal_pro_html: 'Sent with <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Show "Sent with <span class="link">DocuSeal Pro</span>" attribution in emails
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Sign documents with trusted certificate provided by DocuSeal. Your documents and data are never shared with DocuSeal. PDF checksum is provided to generate a trusted signature.
+  sent_with_docuseal_pro_html: 'Sent with <a href="%{product_url}">bsign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Show "Sent with <span class="link">bsign Pro</span>" attribution in emails
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Sign documents with trusted certificate provided by bsign. Your documents and data are never shared with bsign. PDF checksum is provided to generate a trusted signature.
   you_have_been_invited_to_submit_the_name_form: 'You have been invited to submit the "%{name}" form.'
   you_have_been_invited_to_sign_the_name: 'You have been invited to sign the "%{name}".'
   alternatively_you_can_review_and_download_your_copy_using_the_link_below: "Alternatively, you can review and download your copy using the link below:"
@@ -163,7 +163,7 @@ en: &en
   profile_details: Profile Details
   sign_up_with_google: Sign up with Google
   sign_up_with_microsoft: Sign up with Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our <a target="_blank" href="https://www.docuseal.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://www.docuseal.com/terms">Terms of Service</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our <a target="_blank" href="https://www.bsign.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://www.bsign.com/terms">Terms of Service</a>.'
   enter_email_to_continue: Enter email to continue
   account: Account
   preferences: Preferences
@@ -184,7 +184,7 @@ en: &en
   combine_completed_documents_and_audit_log: Combine completed documents and Audit Log
   salesforce_integration: Salesforce Integration
   salesforce_has_been_connected: Salesforce has been connected.
-  connect_salesforce_account_to_integrate_with_docuseal: Connect Salesforce account to integrate with DocuSeal
+  connect_salesforce_account_to_integrate_with_docuseal: Connect Salesforce account to integrate with bsign
   re_connect_salesforce: Re-connect Salesforce
   connect_salesforce: Connect Salesforce
   danger_zone: Danger Zone
@@ -213,13 +213,13 @@ en: &en
   resetting_password: Resetting password
   sign_in_with_name_account: 'Sign in with %{name} account'
   two_factor_code_from_authenticator_app: Two-Factor Code from Authenticator App
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Sign up in DocuSeal Console to upgrade. On-premises app is completely standalone, Console is used only to manage your license.
+  sign_up_in_docuseal_console_to__on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Sign up in bsign Console to . On-premises app is completely standalone, Console is used only to manage your license.
   send_from_email: Send from Email
   optional: optional
   save: Save
   saving: Saving
   changes_have_been_saved: Changes have been saved.
-  unlock_with_docuseal_pro: Unlock with DocuSeal Pro
+  unlock_with_docuseal_pro: Unlock with bsign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Use your own certificates to sign and verify PDF files.
   upload_certificate: Upload Certificate
   name: Name
@@ -318,7 +318,7 @@ en: &en
   password_has_been_changed: Password has been changed.
   email_integration: Email Integration
   send_via_connected_email: Send via connected email
-  activate_with_docuseal_pro: Activate with DocuSeal Pro
+  activate_with_docuseal_pro: Activate with bsign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Send signature request to your recipients directly from your email
   connect_gmail: Connect Gmail
   re_connect_gmail: Re-connect Gmail
@@ -332,7 +332,7 @@ en: &en
   initial_setup: Initial Setup
   demo_environment: Demo Environment
   close: Close
-  upgrade: Upgrade
+  : 
   settings: Settings
   console: Console
   verify_pdf: Verify PDF
@@ -392,10 +392,10 @@ en: &en
   send_sms: Send SMS
   preserve_order: Preserve order
   when_checked_notifications_will_be_sent_to_the_second_party_once_the_form_is_completed_by_the_previous_party_uncheck_this_option_to_send_notifications_to_all_parties_simultaneously_right_away: When checked, notifications will be sent to the second party once the form is completed by the previous party. Uncheck this option to send notifications to all parties simultaneously right away.
-  upgrade_to_send_unlimited_signature_requests: Upgrade to send unlimited signature requests
+  _to_send_unlimited_signature_requests:  to send unlimited signature requests
   add_without_sending: Add without sending
-  upgade_now: Upgrade Now
-  send_signature_request_emails_without_limits_with_docuseal_pro: Send signature request emails without limits with DocuSeal Pro
+  upgade_now:  Now
+  send_signature_request_emails_without_limits_with_docuseal_pro: Send signature request emails without limits with bsign Pro
   count_emails_used: '%{count} emails used'
   has_been_connected: has been connected
   but_not_activated: but not activated
@@ -494,7 +494,7 @@ en: &en
   unarchive: Unarchive
   role: Role
   last_session: Last session
-  unlock_more_user_roles_with_docuseal_pro: Unlock more user roles with DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Unlock more user roles with bsign Pro.
   view_active: View Active
   team_account: Team account
   team_accounts: Team Accounts
@@ -572,7 +572,7 @@ en: &en
   logo_has_been_uploaded: Logo has been uploaded.
   invalid_file_type: Invalid file type
   upload_file: Upload file
-  upgrade_your_plan_to_invite_more_users_contact_email: 'Upgrade your plan to invite more users (contact %{email}).'
+  _your_plan_to_invite_more_users_contact_email: ' your plan to invite more users (contact %{email}).'
   contact_your_admin_email_to_invite_more_users: 'Contact your admin %{email} to invite more users.'
   contact_your_administrator_to_add_new_users: Contact your administrator to add new user
   one_hour: 1 hour
@@ -605,7 +605,7 @@ en: &en
   start_with_pro: Start with Pro
   user_month: user / month
   developer_sandbox: Developer Sandbox.
-  upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Upgrade</a> to start using in Production.'
+  _to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold"></a> to start using in Production.'
   download_combined_pdf: Download combined PDF
   audit_log: Audit Log
   signers: Signers
@@ -700,7 +700,7 @@ en: &en
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Use <b>%{code}</b> code to sign in or click the link below:'
   complete_sign_in: Complete Sign In
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Please reply to this email if you don't recognize this sign in attempt.
-  docuseal_support: DocuSeal Support
+  docuseal_support: bsign Support
   use_the_edit_form_to_move_it_to_another_team: Use the edit form to move it to another team.
   too_many_sms_attempts_try_again_in_a_few_seconds: Too many SMS attempts. Try again in a few seconds.
   number_phone_number_is_invalid: "+%{number} phone number is invalid"
@@ -709,25 +709,25 @@ en: &en
   seamlessly_automate_your_document_signing_process_with_make_com: Seamlessly automate your document signing process with Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Find suitable Zapier templates to automate your workflow.
   get_started: Get started
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Click here</a> to learn more about user roles and permissions.'
-  count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 signature request emails sent this month. Upgrade to Pro to send unlimited signature request email.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.bsign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Click here</a> to learn more about user roles and permissions.'
+  count_10_signature_request_emails_sent_this_month__to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 signature request emails sent this month.  to send unlimited signature request email.'
   test_mode_emails_limit_will_be_reset_within_24_hours: Test mode emails limit will be reset within 24 hours.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: On a scale of 1 to 10, how satisfied are you with the DocuSeal product?
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: On a scale of 1 to 10, how satisfied are you with the bsign product?
   tell_us_more_about_your_experience: Tell us more about your experience
   extremely_dissatisfied: Extremely Dissatisfied
   extremely_satisfied: Extremely Satisfied
-  your_pro_plan_payment_is_overdue: Your Pro plan payment is overdue.
+  your_pro_plan_payment_is_overdue: Your  payment is overdue.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: <a href="%{url}" class="link">Click here</a> to update your payment details and clear the invoice to ensure uninterrupted service.
   overdue_payment: Overdue Payment
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Your Pro Plan has been suspended due to unpaid invoices. You can update your payment details to settle the invoice and continue using DocuSeal or cancel your subscription.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Your  has been suspended due to unpaid invoices. You can update your payment details to settle the invoice and continue using bsign or cancel your subscription.
   manage_subscription: Manage Subscription
   submission_created_by_email_html: '<b>Submission created</b> by %{email}'
   submission_created_by_email_via_source_html: '<b>Submission created</b> by %{email} via %{source}'
   submission_created_via_source_html: '<b>Submission created</b> via %{source}'
-  pro_user_seats_used: user seats used
+  pro_user_seats_used: Pro user seats used
   manage_plan: Manage plan
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: This submission has multiple signers, which prevents the use of a sharing link as it's unclear which signer is responsible for specific fields. To resolve this, follow this <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guide</a> to define the default signer details.
-  welcome_to_docuseal: Welcome to DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: This submission has multiple signers, which prevents the use of a sharing link as it's unclear which signer is responsible for specific fields. To resolve this, follow this <a href="https://www.bsign.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guide</a> to define the default signer details.
+  welcome_to_docuseal: Welcome to bsign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Start a quick tour to learn how to create an send your first document
   start_tour: Start Tour
   name_a_z: Name A-Z
@@ -858,7 +858,7 @@ en: &en
     settings: 'Settings'
     settings_account_description: 'With comprehensive account settings, you can customize the eSigning experience and invite more users.'
     support: 'Support'
-    support_description: 'You can use our self-service AI assistant or email us at support@docuseal.com if you have any questions.'
+    support_description: 'You can use our self-service AI assistant or email us at support@bsign.com if you have any questions.'
     settings_template_description: 'Use this button to access your account settings page.'
   doorkeeper:
     scopes:
@@ -923,15 +923,15 @@ es: &es
   awaiting_completion_by_the_other_party: "Esperando la finalización por la otra parte"
   enforce_recipients_order: 'Hacer cumplir el orden de los destinatarios'
   first_party: 'Primera Parte'
-  docuseal_trusted_signature: Firma de confianza DocuSeal
+  docuseal_trusted_signature: Firma de confianza bsign
   hello_name: Hola %{name}
   you_are_invited_to_product_name: Estás invitado a %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Has sido invitado a %{account_name} %{product_name}. Por favor, regístrate usando el enlace a continuación:'
   sent_using_product_name_in_testing_mode_html: 'Enviado usando <a href="%{product_url}">%{product_name}</a> en Modo de Prueba'
   sent_using_product_name_free_document_signing_html: 'Enviado usando la firma de documentos gratuita de <a href="%{product_url}">%{product_name}</a>.'
-  sent_with_docuseal_pro_html: 'Enviado con <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Mostrar el mensaje "Enviado con <span class="link">DocuSeal Pro</span>" en los correos electrónicos
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Firme documentos con un certificado de confianza proporcionado por DocuSeal. Sus documentos y datos nunca se comparten con DocuSeal. Se proporciona un checksum de PDF para generar una firma de confianza.
+  sent_with_docuseal_pro_html: 'Enviado con <a href="%{product_url}">bsign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Mostrar el mensaje "Enviado con <span class="link">bsign Pro</span>" en los correos electrónicos
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Firme documentos con un certificado de confianza proporcionado por bsign. Sus documentos y datos nunca se comparten con bsign. Se proporciona un checksum de PDF para generar una firma de confianza.
   hi_there: Hola
   thanks: Gracias
   you_have_been_invited_to_submit_the_name_form: 'Has sido invitado/a a enviar el formulario "%{name}".'
@@ -1029,7 +1029,7 @@ es: &es
   profile_details: Detalles del perfil
   sign_up_with_google: Registrarse con Google
   sign_up_with_microsoft: Registrarse con Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Al crear una cuenta, aceptas nuestra <a target="_blank" href="https://www.docuseal.com/privacy">Política de Privacidad</a> y <a target="_blank" href="https://www.docuseal.com/terms">Términos de Servicio</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Al crear una cuenta, aceptas nuestra <a target="_blank" href="https://www.bsign.com/privacy">Política de Privacidad</a> y <a target="_blank" href="https://www.bsign.com/terms">Términos de Servicio</a>.'
   enter_email_to_continue: Ingresa tu correo electrónico para continuar
   account: Cuenta
   preferences: Preferencias
@@ -1050,7 +1050,7 @@ es: &es
   combine_completed_documents_and_audit_log: Combinar documentos completados y Registro de Auditoría
   salesforce_integration: Integración con Salesforce
   salesforce_has_been_connected: Salesforce ha sido conectado.
-  connect_salesforce_account_to_integrate_with_docuseal: Conectar cuenta de Salesforce para integrar con DocuSeal
+  connect_salesforce_account_to_integrate_with_docuseal: Conectar cuenta de Salesforce para integrar con bsign
   re_connect_salesforce: Volver a conectar Salesforce
   connect_salesforce: Conectar Salesforce
   danger_zone: Zona de peligro
@@ -1079,13 +1079,13 @@ es: &es
   resetting_password: Restableciendo contraseña
   sign_in_with_name_account: 'Iniciar sesión con la cuenta de %{name}'
   two_factor_code_from_authenticator_app: Código de dos factores de la aplicación Authenticator
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Regístrate en la consola de DocuSeal para actualizar. La aplicación local es completamente independiente, la consola solo se utiliza para gestionar tu licencia.
+  sign_up_in_docuseal_console_to__on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Regístrate en la consola de bsign para actualizar. La aplicación local es completamente independiente, la consola solo se utiliza para gestionar tu licencia.
   send_from_email: Enviar desde correo electrónico
   optional: opcional
   save: Guardar
   saving: Guardando
   changes_have_been_saved: Los cambios han sido guardados.
-  unlock_with_docuseal_pro: Desbloquear con DocuSeal Pro
+  unlock_with_docuseal_pro: Desbloquear con bsign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Usa tus propios certificados para firmar y verificar archivos PDF.
   upload_certificate: Subir certificado
   name: Nombre
@@ -1184,7 +1184,7 @@ es: &es
   password_has_been_changed: La contraseña ha sido cambiada.
   email_integration: Integración de correo electrónico
   send_via_connected_email: Enviar vía correo electrónico conectado
-  activate_with_docuseal_pro: Activar con DocuSeal Pro
+  activate_with_docuseal_pro: Activar con bsign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Envía la solicitud de firma a tus destinatarios directamente desde tu correo electrónico
   connect_gmail: Conectar Gmail
   re_connect_gmail: Volver a conectar Gmail
@@ -1198,7 +1198,7 @@ es: &es
   initial_setup: Configuración inicial
   demo_environment: Entorno de demostración
   close: Cerrar
-  upgrade: Actualizar
+  : Actualizar
   settings: Configuración
   console: Consola
   verify_pdf: Verificar PDF
@@ -1258,10 +1258,10 @@ es: &es
   send_sms: Enviar SMS
   preserve_order: Conservar orden
   when_checked_notifications_will_be_sent_to_the_second_party_once_the_form_is_completed_by_the_previous_party_uncheck_this_option_to_send_notifications_to_all_parties_simultaneously_right_away: Cuando está marcado, las notificaciones se enviarán a la segunda parte una vez que la primera parte haya completado el formulario. Desmarca esta opción para enviar notificaciones a todas las partes simultáneamente de inmediato.
-  upgrade_to_send_unlimited_signature_requests: Actualiza para enviar solicitudes de firma ilimitadas
+  _to_send_unlimited_signature_requests: Actualiza para enviar solicitudes de firma ilimitadas
   add_without_sending: Agregar sin enviar
   upgade_now: Actualizar ahora
-  send_signature_request_emails_without_limits_with_docuseal_pro: Envía solicitudes de firma sin límites con DocuSeal Pro
+  send_signature_request_emails_without_limits_with_docuseal_pro: Envía solicitudes de firma sin límites con bsign Pro
   count_emails_used: '%{count} correos electrónicos utilizados'
   has_been_connected: ha sido conectado
   but_not_activated: pero no activado
@@ -1323,7 +1323,7 @@ es: &es
   share_template_with_test_mode: Compartir plantilla con el modo de prueba
   share_template_with_all_tenants: Compartir plantilla con todos los inquilinos
   use_following_placeholders_text_: 'Usa los siguientes marcadores de posición:'
-  users_count_total_users_count_pro_users_limit_was_reached_to_invite_additional_users_please_purchase_more_pro_user_seats_via_the_manage_plan_button: 'Se alcanzó el límite de %{users_count}/%{total_users_count} usuarios Pro. Para invitar a más usuarios, compra más plazas usando el botón "Gestionar plan".'
+  users_count_total_users_count_pro_users_limit_was_reached_to_invite_additional_users_please_purchase_more_pro_user_seats_via_the_manage_plan_button: 'Se alcanzó el límite de %{users_count}/%{total_users_count} usuarios Pro. Para invitar a más usuarios, compra más plazas Pro usando el botón "Gestionar plan".'
   move_into_folder: Mover a la carpeta
   new_folder_name: Nuevo nombre de la carpeta
   exit_preview: Salir de la vista previa
@@ -1360,7 +1360,7 @@ es: &es
   unarchive: Desarchivar
   role: Rol
   last_session: Última sesión
-  unlock_more_user_roles_with_docuseal_pro: Desbloquea más roles de usuario con DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Desbloquea más roles de usuario con bsign Pro.
   view_active: Ver activos
   team_account: Cuenta de equipo
   team_accounts: Cuentas de equipo
@@ -1438,7 +1438,7 @@ es: &es
   logo_has_been_uploaded: El logotipo ha sido subido.
   invalid_file_type: Tipo de archivo no válido
   upload_file: Subir archivo
-  upgrade_your_plan_to_invite_more_users_contact_email: 'Actualiza tu plan para invitar a más usuarios (contacta a %{email}).'
+  _your_plan_to_invite_more_users_contact_email: 'Actualiza tu plan para invitar a más usuarios (contacta a %{email}).'
   contact_your_admin_email_to_invite_more_users: 'Contacta a tu administrador %{email} para invitar a más usuarios.'
   contact_your_administrator_to_add_new_users: Contacta a tu administrador para agregar un nuevo usuario.
   one_hour: 1 hora
@@ -1471,7 +1471,7 @@ es: &es
   start_with_pro: Comenzar con Pro
   user_month: usuario / mes
   developer_sandbox: Sandbox para desarrolladores.
-  upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Actualiza</a> para empezar a usar en Producción.'
+  _to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Actualiza</a> para empezar a usar en Producción.'
   download_combined_pdf: Descargar PDF combinado
   audit_log: Registro de Auditoría
   signers: Firmantes
@@ -1566,7 +1566,7 @@ es: &es
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Usa el código <b>%{code}</b> para iniciar sesión o haz clic en el enlace a continuación:'
   complete_sign_in: Completar Inicio de Sesión
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Responde a este correo electrónico si no reconoces este intento de inicio de sesión.
-  docuseal_support: Soporte DocuSeal
+  docuseal_support: Soporte bsign
   use_the_edit_form_to_move_it_to_another_team: Usa el formulario de edición para moverlo a otro equipo.
   too_many_sms_attempts_try_again_in_a_few_seconds: Demasiados intentos de SMS. Intenta de nuevo en unos segundos.
   number_phone_number_is_invalid: "El número de teléfono +%{number} no es válido"
@@ -1575,25 +1575,25 @@ es: &es
   seamlessly_automate_your_document_signing_process_with_make_com: Automatiza sin problemas tu proceso de firma de documentos con Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Encuentra plantillas de Zapier adecuadas para automatizar tu flujo de trabajo.
   get_started: Comenzar
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Haz clic aquí</a> para obtener más información sobre los roles y permisos de usuario.'
-  count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 correos electrónicos de solicitud de firma enviados este mes. Mejora a Pro para enviar solicitudes de firma ilimitadas.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.bsign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Haz clic aquí</a> para obtener más información sobre los roles y permisos de usuario.'
+  count_10_signature_request_emails_sent_this_month__to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 correos electrónicos de solicitud de firma enviados este mes. Mejora a Pro para enviar solicitudes de firma ilimitadas.'
   test_mode_emails_limit_will_be_reset_within_24_hours: El límite de correos electrónicos en modo de prueba se restablecerá en 24 horas.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'En una escala del 1 al 10, ¿qué tan satisfecho estás con el producto DocuSeal?'
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'En una escala del 1 al 10, ¿qué tan satisfecho estás con el producto bsign?'
   tell_us_more_about_your_experience: Cuéntanos más sobre tu experiencia
   extremely_dissatisfied: Extremadamente insatisfecho
   extremely_satisfied: Extremadamente satisfecho
   your_pro_plan_payment_is_overdue: El pago de tu plan Pro está atrasado.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: '<a href="%{url}" class="link">Haz clic aquí</a> para actualizar tus datos de pago y liquidar la factura para garantizar un servicio ininterrumpido.'
   overdue_payment: Pago Atrasado
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Tu plan Pro ha sido suspendido debido a facturas impagas. Puedes actualizar tus datos de pago para liquidar la factura y seguir usando DocuSeal o cancelar tu suscripción.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Tu plan Pro ha sido suspendido debido a facturas impagas. Puedes actualizar tus datos de pago para liquidar la factura y seguir usando bsign o cancelar tu suscripción.
   manage_subscription: Gestionar Suscripción
   submission_created_by_email_html: '<b>Envío creado</b> por %{email}'
   submission_created_by_email_via_source_html: '<b>Envío creado</b> por %{email} a través de %{source}'
   submission_created_via_source_html: '<b>Envío creado</b> a través de %{source}'
   pro_user_seats_used: Plazas de usuario Pro en uso
   manage_plan: Gestionar plan
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Este envío tiene múltiples firmantes, lo que impide el uso de un enlace para compartir, ya que no está claro qué firmante es responsable de los campos específicos. Para resolver esto, sigue esta <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guía</a> para definir los detalles predeterminados del firmante.'
-  welcome_to_docuseal: Bienvenido a DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Este envío tiene múltiples firmantes, lo que impide el uso de un enlace para compartir, ya que no está claro qué firmante es responsable de los campos específicos. Para resolver esto, sigue esta <a href="https://www.bsign.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guía</a> para definir los detalles predeterminados del firmante.'
+  welcome_to_docuseal: Bienvenido a bsign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Inicia una guía rápida para aprender a crear y enviar tu primer documento.
   start_tour: Iniciar guía
   name_a_z: Nombre A-Z
@@ -1724,7 +1724,7 @@ es: &es
     settings: 'Configuración'
     settings_account_description: 'Con una configuración completa de la cuenta, puedes personalizar la experiencia de firma y añadir más usuarios.'
     support: 'Soporte'
-    support_description: 'Puedes usar nuestro asistente de IA o escribirnos a support@docuseal.com si tienes preguntas.'
+    support_description: 'Puedes usar nuestro asistente de IA o escribirnos a support@bsign.com si tienes preguntas.'
     settings_template_description: 'Usa este botón para acceder a la configuración de tu cuenta.'
   doorkeeper:
     scopes:
@@ -1788,15 +1788,15 @@ it: &it
   awaiting_completion_by_the_other_party: "In attesa di completamento da parte dell'altra parte"
   enforce_recipients_order: "Applicare l'ordine dei destinatari"
   first_party: 'Prima parte'
-  docuseal_trusted_signature: "Firma Fiduciaria DocuSeal"
+  docuseal_trusted_signature: "Firma Fiduciaria bsign"
   hello_name: Ciao %{name}
   you_are_invited_to_product_name: Sei stato invitato a %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Sei stato invitato a %{account_name} %{product_name}. Registrati utilizzando il link qui sotto:'
   sent_using_product_name_in_testing_mode_html: 'Inviato utilizzando <a href="%{product_url}">%{product_name}</a> in Modalità di Test'
   sent_using_product_name_free_document_signing_html: 'Inviato utilizzando la firma di documenti gratuita di <a href="%{product_url}">%{product_name}</a>.'
-  sent_with_docuseal_pro_html: 'Inviato con <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Mostra la dicitura "Inviato con <span class="link">DocuSeal Pro</span>" nelle email
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: "Firma documenti con un certificato di fiducia fornito da DocuSeal. I tuoi documenti e i tuoi dati non vengono mai condivisi con DocuSeal. Il checksum PDF è fornito per generare una firma di fiducia."
+  sent_with_docuseal_pro_html: 'Inviato con <a href="%{product_url}">bsign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Mostra la dicitura "Inviato con <span class="link">bsign Pro</span>" nelle email
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: "Firma documenti con un certificato di fiducia fornito da bsign. I tuoi documenti e i tuoi dati non vengono mai condivisi con bsign. Il checksum PDF è fornito per generare una firma di fiducia."
   hi_there: Ciao
   thanks: Grazie
   you_have_been_invited_to_submit_the_name_form: 'Sei stato invitato a inviare il modulo "%{name}".'
@@ -1894,7 +1894,7 @@ it: &it
   profile_details: Dettagli del profilo
   sign_up_with_google: Registrati con Google
   sign_up_with_microsoft: Registrati con Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Creando un account, accetti la nostra <a target="_blank" href="https://www.docuseal.com/privacy">Privacy Policy</a> e i nostri <a target="_blank" href="https://www.docuseal.com/terms">Termini di servizio</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Creando un account, accetti la nostra <a target="_blank" href="https://www.bsign.com/privacy">Privacy Policy</a> e i nostri <a target="_blank" href="https://www.bsign.com/terms">Termini di servizio</a>.'
   enter_email_to_continue: "Inserisci l'email per continuare"
   account: Account
   preferences: Preferenze
@@ -1915,7 +1915,7 @@ it: &it
   combine_completed_documents_and_audit_log: Combinare i documenti completati e il Registro di Audit
   salesforce_integration: Integrazione con Salesforce
   salesforce_has_been_connected: Salesforce è stato connesso.
-  connect_salesforce_account_to_integrate_with_docuseal: "Connetti l'account Salesforce per integrare con DocuSeal"
+  connect_salesforce_account_to_integrate_with_docuseal: "Connetti l'account Salesforce per integrare con bsign"
   re_connect_salesforce: Riconnetti Salesforce
   connect_salesforce: Connetti Salesforce
   danger_zone: Zona di pericolo
@@ -1944,13 +1944,13 @@ it: &it
   resetting_password: Reimpostazione password in corso
   sign_in_with_name_account: "Accedi con l'account %{name}"
   two_factor_code_from_authenticator_app: "Codice a due fattori dall'app Authenticator"
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: "Registrati nella console di DocuSeal per aggiornare. L'applicazione on-premise è completamente autonoma, la console viene utilizzata solo per gestire la tua licenza."
+  sign_up_in_docuseal_console_to__on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: "Registrati nella console di bsign per aggiornare. L'applicazione on-premise è completamente autonoma, la console viene utilizzata solo per gestire la tua licenza."
   send_from_email: Invia da Email
   optional: opzionale
   save: Salva
   saving: Salvataggio in corso
   changes_have_been_saved: Le modifiche sono state salvate.
-  unlock_with_docuseal_pro: Sblocca con DocuSeal Pro
+  unlock_with_docuseal_pro: Sblocca con bsign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Usa i tuoi certificati per firmare e verificare i file PDF.
   upload_certificate: Carica certificato
   name: Nome
@@ -2049,7 +2049,7 @@ it: &it
   password_has_been_changed: La password è stata cambiata.
   email_integration: Integrazione email
   send_via_connected_email: Invia tramite email connessa
-  activate_with_docuseal_pro: Attiva con DocuSeal Pro
+  activate_with_docuseal_pro: Attiva con bsign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Invia la richiesta di firma ai tuoi destinatari direttamente dalla tua email
   connect_gmail: Connetti Gmail
   re_connect_gmail: Riconnetti Gmail
@@ -2063,7 +2063,7 @@ it: &it
   initial_setup: Configurazione iniziale
   demo_environment: Ambiente demo
   close: Chiudi
-  upgrade: Aggiorna
+  : Aggiorna
   settings: Impostazioni
   console: Console
   verify_pdf: Verifica PDF
@@ -2123,10 +2123,10 @@ it: &it
   send_sms: Invia SMS
   preserve_order: Mantieni ordine
   when_checked_notifications_will_be_sent_to_the_second_party_once_the_form_is_completed_by_the_previous_party_uncheck_this_option_to_send_notifications_to_all_parties_simultaneously_right_away: Quando selezionato, le notifiche saranno inviate alla seconda parte una volta che la parte precedente ha completato il modulo. Deseleziona questa opzione per inviare notifiche a tutte le parti simultaneamente.
-  upgrade_to_send_unlimited_signature_requests: Aggiorna per inviare richieste di firma illimitate
+  _to_send_unlimited_signature_requests: Aggiorna per inviare richieste di firma illimitate
   add_without_sending: Aggiungi senza inviare
   upgade_now: Aggiorna ora
-  send_signature_request_emails_without_limits_with_docuseal_pro: Invia email di richiesta di firma senza limiti con DocuSeal Pro
+  send_signature_request_emails_without_limits_with_docuseal_pro: Invia email di richiesta di firma senza limiti con bsign Pro
   count_emails_used: '%{count} email utilizzate'
   has_been_connected: è stato connesso
   but_not_activated: ma non attivato
@@ -2224,7 +2224,7 @@ it: &it
   unarchive: Disarchivia
   role: Ruolo
   last_session: Ultima sessione
-  unlock_more_user_roles_with_docuseal_pro: Sblocca più ruoli utente con DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Sblocca più ruoli utente con bsign Pro.
   view_active: Visualizza attivi
   team_account: Account di squadra
   team_accounts: Account di squadra
@@ -2302,7 +2302,7 @@ it: &it
   logo_has_been_uploaded: Il logo è stato caricato.
   invalid_file_type: Tipo di file non valido
   upload_file: Carica file
-  upgrade_your_plan_to_invite_more_users_contact_email: 'Aggiorna il tuo piano per invitare più utenti (contatta %{email}).'
+  _your_plan_to_invite_more_users_contact_email: 'Aggiorna il tuo piano per invitare più utenti (contatta %{email}).'
   contact_your_admin_email_to_invite_more_users: 'Contatta il tuo amministratore %{email} per invitare più utenti.'
   contact_your_administrator_to_add_new_users: Contatta il tuo amministratore per aggiungere nuovi utenti.
   one_hour: 1 ora
@@ -2335,7 +2335,7 @@ it: &it
   start_with_pro: Inizia con Pro
   user_month: utente / mese
   developer_sandbox: Sandbox per sviluppatori
-  upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Aggiorna</a> per iniziare a usare in produzione.'
+  _to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Aggiorna</a> per iniziare a usare in produzione.'
   download_combined_pdf: Scarica PDF combinato
   audit_log: Registro di audit
   signers: Firmatari
@@ -2430,7 +2430,7 @@ it: &it
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Usa il codice <b>%{code}</b> per accedere o clicca sul link qui sotto:'
   complete_sign_in: "Completa l'Accesso"
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Rispondi a questa e-mail se non riconosci questo tentativo di accesso.
-  docuseal_support: Supporto DocuSeal
+  docuseal_support: Supporto bsign
   use_the_edit_form_to_move_it_to_another_team: Usa il modulo di modifica per spostarlo in un altro team.
   too_many_sms_attempts_try_again_in_a_few_seconds: Troppi tentativi di SMS. Riprova tra qualche secondo.
   number_phone_number_is_invalid: "Il numero di telefono +%{number} non è valido"
@@ -2439,25 +2439,25 @@ it: &it
   seamlessly_automate_your_document_signing_process_with_make_com: Automatizza senza problemi il tuo processo di firma dei documenti con Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Trova modelli Zapier adatti per automatizzare il tuo flusso di lavoro.
   get_started: Inizia
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Fai clic qui</a> per saperne di più sui ruoli e le autorizzazioni degli utenti.'
-  count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mail di richiesta di firma inviati questo mese. Passa a Pro per inviare richieste di firma illimitate.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.bsign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Fai clic qui</a> per saperne di più sui ruoli e le autorizzazioni degli utenti.'
+  count_10_signature_request_emails_sent_this_month__to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mail di richiesta di firma inviati questo mese. Passa a Pro per inviare richieste di firma illimitate.'
   test_mode_emails_limit_will_be_reset_within_24_hours: Il limite di e-mail in modalità di test verrà ripristinato entro 24 ore.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Su una scala da 1 a 10, quanto sei soddisfatto del prodotto DocuSeal?'
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Su una scala da 1 a 10, quanto sei soddisfatto del prodotto bsign?'
   tell_us_more_about_your_experience: Raccontaci di più sulla tua esperienza
   extremely_dissatisfied: Estremamente insoddisfatto
   extremely_satisfied: Estremamente soddisfatto
   your_pro_plan_payment_is_overdue: Il pagamento del tuo piano Pro è in ritardo.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: '<a href="%{url}" class="link">Fai clic qui</a> per aggiornare i tuoi dati di pagamento e saldare la fattura per garantire un servizio ininterrotto.'
   overdue_payment: Pagamento Scaduto
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Il tuo piano Pro è stato sospeso a causa di fatture non pagate. Puoi aggiornare i tuoi dati di pagamento per saldare la fattura e continuare a utilizzare DocuSeal o annullare l'abbonamento.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Il tuo piano Pro è stato sospeso a causa di fatture non pagate. Puoi aggiornare i tuoi dati di pagamento per saldare la fattura e continuare a utilizzare bsign o annullare l'abbonamento.
   manage_subscription: Gestisci Abbonamento
   submission_created_by_email_html: '<b>Invio creato</b> da %{email}'
   submission_created_by_email_via_source_html: '<b>Invio creato</b> da %{email} tramite %{source}'
   submission_created_via_source_html: '<b>Invio creato</b> tramite %{source}'
   pro_user_seats_used: Posti utente Pro in uso
   manage_plan: Gestisci piano
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: "Questa sottomissione ha più firmatari, il che impedisce l'uso di un link di condivisione poiché non è chiaro quale firmatario sia responsabile di specifici campi. Per risolvere questo problema, segui questa <a href=\"https://www.docuseal.com/resources/pre-filling-recipients\" class=\"link font-bold\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">guida</a> per definire i dettagli predefiniti del firmatario."
-  welcome_to_docuseal: Benvenuto in DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: "Questa sottomissione ha più firmatari, il che impedisce l'uso di un link di condivisione poiché non è chiaro quale firmatario sia responsabile di specifici campi. Per risolvere questo problema, segui questa <a href=\"https://www.bsign.com/resources/pre-filling-recipients\" class=\"link font-bold\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">guida</a> per definire i dettagli predefiniti del firmatario."
+  welcome_to_docuseal: Benvenuto in bsign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Inizia un tour rapido per imparare a creare e inviare il tuo primo documento.
   start_tour: Inizia il tour
   name_a_z: Nome A-Z
@@ -2589,7 +2589,7 @@ it: &it
     settings: 'Impostazioni'
     settings_account_description: "Con impostazioni complete dell'account, puoi personalizzare l'esperienza di firma elettronica e invitare altri utenti."
     support: 'Supporto'
-    support_description: 'Puoi usare il nostro assistente AI oppure scriverci a support@docuseal.com se hai domande.'
+    support_description: 'Puoi usare il nostro assistente AI oppure scriverci a support@bsign.com se hai domande.'
     settings_template_description: "Usa questo pulsante per accedere alla pagina delle impostazioni dell'account."
   doorkeeper:
     scopes:
@@ -2654,15 +2654,15 @@ fr: &fr
   awaiting_completion_by_the_other_party: "En attente de la complétion par l'autre partie"
   enforce_recipients_order: "Respecter l'ordre des destinataires"
   first_party: 'Première partie'
-  docuseal_trusted_signature: Signature de confiance DocuSeal
+  docuseal_trusted_signature: Signature de confiance bsign
   hello_name: Bonjour %{name}
   you_are_invited_to_product_name: Vous êtes invité à %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Vous avez été invité à %{account_name} %{product_name}. Veuillez vous inscrire en utilisant le lien ci-dessous:'
   sent_using_product_name_in_testing_mode_html: 'Envoyé en utilisant <a href="%{product_url}">%{product_name}</a> en Mode Test'
   sent_using_product_name_free_document_signing_html: 'Envoyé en utilisant la signature de documents gratuite de <a href="%{product_url}">%{product_name}</a>.'
-  sent_with_docuseal_pro_html: 'Envoyé avec <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Afficher "Envoyé avec <span class="link">DocuSeal Pro</span>" dans les e-mails
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Signez des documents avec un certificat de confiance fourni par DocuSeal. Vos documents et données ne sont jamais partagés avec DocuSeal. Un checksum PDF est fourni pour générer une signature de confiance.
+  sent_with_docuseal_pro_html: 'Envoyé avec <a href="%{product_url}">bsign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Afficher "Envoyé avec <span class="link">bsign Pro</span>" dans les e-mails
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Signez des documents avec un certificat de confiance fourni par bsign. Vos documents et données ne sont jamais partagés avec bsign. Un checksum PDF est fourni pour générer une signature de confiance.
   hi_there: Bonjour
   thanks: Merci
   you_have_been_invited_to_submit_the_name_form: 'Vous avez été invité à remplir le formulaire "%{name}".'
@@ -2761,7 +2761,7 @@ fr: &fr
   sign_up_with_google: S'inscrire avec Google
   sign_up_with_microsoft: S'inscrire avec Microsoft
   by_creating_an_account_you_agree_to_our_html: |
-    En créant un compte, vous acceptez notre <a target="_blank" href="https://www.docuseal.com/privacy">Politique de Confidentialité</a> et nos <a target="_blank" href="https://www.docuseal.com/terms">Conditions d'Utilisation</a>.
+    En créant un compte, vous acceptez notre <a target="_blank" href="https://www.bsign.com/privacy">Politique de Confidentialité</a> et nos <a target="_blank" href="https://www.bsign.com/terms">Conditions d'Utilisation</a>.
   enter_email_to_continue: Entrez votre e-mail pour continuer
   account: Compte
   preferences: Préférences
@@ -2782,7 +2782,7 @@ fr: &fr
   combine_completed_documents_and_audit_log: "Combiner les documents complétés et le journal d'audit"
   salesforce_integration: Intégration avec Salesforce
   salesforce_has_been_connected: Salesforce a été connecté.
-  connect_salesforce_account_to_integrate_with_docuseal: "Connectez votre compte Salesforce pour l'intégrer avec DocuSeal"
+  connect_salesforce_account_to_integrate_with_docuseal: "Connectez votre compte Salesforce pour l'intégrer avec bsign"
   re_connect_salesforce: Reconnecter Salesforce
   connect_salesforce: Connecter Salesforce
   danger_zone: Zone dangereuse
@@ -2811,13 +2811,13 @@ fr: &fr
   resetting_password: Réinitialisation du mot de passe en cours
   sign_in_with_name_account: 'Se connecter avec le compte %{name}'
   two_factor_code_from_authenticator_app: "Code à deux facteurs de l'application Authenticator"
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: "Inscrivez-vous sur la console DocuSeal pour effectuer la mise à niveau. L'application locale est totalement autonome, la console est uniquement utilisée pour gérer votre licence."
+  sign_up_in_docuseal_console_to__on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: "Inscrivez-vous sur la console bsign pour effectuer la mise à niveau. L'application locale est totalement autonome, la console est uniquement utilisée pour gérer votre licence."
   send_from_email: "Envoyer depuis l'email"
   optional: optionnel
   save: Enregistrer
   saving: Enregistrement en cours
   changes_have_been_saved: Les modifications ont été enregistrées.
-  unlock_with_docuseal_pro: Débloquer avec DocuSeal Pro
+  unlock_with_docuseal_pro: Débloquer avec bsign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Utilisez vos propres certificats pour signer et vérifier les fichiers PDF.
   upload_certificate: Télécharger un certificat
   name: Nom
@@ -2916,7 +2916,7 @@ fr: &fr
   password_has_been_changed: Le mot de passe a été changé.
   email_integration: Intégration e-mail
   send_via_connected_email: Envoyer via un e-mail connecté
-  activate_with_docuseal_pro: Activer avec DocuSeal Pro
+  activate_with_docuseal_pro: Activer avec bsign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Envoyer une demande de signature directement depuis votre e-mail
   connect_gmail: Connecter Gmail
   re_connect_gmail: Reconnecter Gmail
@@ -2930,7 +2930,7 @@ fr: &fr
   initial_setup: Configuration initiale
   demo_environment: Environnement de démonstration
   close: Fermer
-  upgrade: Mettre à jour
+  : Mettre à jour
   settings: Paramètres
   console: Console
   verify_pdf: Vérifier le PDF
@@ -2990,10 +2990,10 @@ fr: &fr
   send_sms: Envoyer SMS
   preserve_order: "Préserver l'ordre"
   when_checked_notifications_will_be_sent_to_the_second_party_once_the_form_is_completed_by_the_previous_party_uncheck_this_option_to_send_notifications_to_all_parties_simultaneously_right_away: "Lorsqu'elle est cochée, les notifications seront envoyées à la deuxième partie une fois que la partie précédente aura complété le formulaire. Décochez cette option pour envoyer des notifications à toutes les parties simultanément immédiatement."
-  upgrade_to_send_unlimited_signature_requests: Mettez à jour pour envoyer des demandes de signature illimitées
+  _to_send_unlimited_signature_requests: Mettez à jour pour envoyer des demandes de signature illimitées
   add_without_sending: Ajouter sans envoyer
   upgade_now: Mettre à jour maintenant
-  send_signature_request_emails_without_limits_with_docuseal_pro: Envoyez des e-mails de demande de signature sans limites avec DocuSeal Pro
+  send_signature_request_emails_without_limits_with_docuseal_pro: Envoyez des e-mails de demande de signature sans limites avec bsign Pro
   count_emails_used: '%{count} e-mails utilisés'
   has_been_connected: a été connecté
   but_not_activated: mais pas activé
@@ -3092,7 +3092,7 @@ fr: &fr
   unarchive: Désarchiver
   role: Rôle
   last_session: Dernière session
-  unlock_more_user_roles_with_docuseal_pro: Déverrouillez plus de rôles d'utilisateurs avec DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Déverrouillez plus de rôles d'utilisateurs avec bsign Pro.
   view_active: Voir les actifs
   team_account: "Compte d'équipe"
   team_accounts: "Comptes d'équipe"
@@ -3170,7 +3170,7 @@ fr: &fr
   logo_has_been_uploaded: Le logo a été téléchargé.
   invalid_file_type: Type de fichier non valide
   upload_file: Télécharger le fichier
-  upgrade_your_plan_to_invite_more_users_contact_email: "Mettez à jour votre plan pour inviter plus d'utilisateurs (contactez %{email})."
+  _your_plan_to_invite_more_users_contact_email: "Mettez à jour votre plan pour inviter plus d'utilisateurs (contactez %{email})."
   contact_your_admin_email_to_invite_more_users: "Contactez votre administrateur %{email} pour inviter plus d'utilisateurs."
   contact_your_administrator_to_add_new_users: Contactez votre administrateur pour ajouter de nouveaux utilisateurs.
   one_hour: 1 heure
@@ -3203,7 +3203,7 @@ fr: &fr
   start_with_pro: Commencer avec Pro
   user_month: utilisateur / mois
   developer_sandbox: Bac à sable pour développeurs
-  upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Mettre à jour</a> pour commencer à utiliser en production.'
+  _to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Mettre à jour</a> pour commencer à utiliser en production.'
   download_combined_pdf: Télécharger le PDF combiné
   audit_log: "Journal d'audit"
   signers: Signataires
@@ -3298,7 +3298,7 @@ fr: &fr
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Utilisez le code <b>%{code}</b> pour vous connecter ou cliquez sur le lien ci-dessous :'
   complete_sign_in: Terminer la Connexion
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Veuillez répondre à cet e-mail si vous ne reconnaissez pas cette tentative de connexion.
-  docuseal_support: Support DocuSeal
+  docuseal_support: Support bsign
   use_the_edit_form_to_move_it_to_another_team: Utilisez le formulaire de modification pour le déplacer vers une autre équipe.
   too_many_sms_attempts_try_again_in_a_few_seconds: Trop de tentatives de SMS. Réessayez dans quelques secondes.
   number_phone_number_is_invalid: "Le numéro de téléphone +%{number} est invalide"
@@ -3307,25 +3307,25 @@ fr: &fr
   seamlessly_automate_your_document_signing_process_with_make_com: Automatisez facilement votre processus de signature de documents avec Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Trouvez des modèles Zapier adaptés pour automatiser votre flux de travail.
   get_started: Commencer
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Cliquez ici</a> pour en savoir plus sur les rôles et les autorisations des utilisateurs.'
-  count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mails de demande de signature envoyés ce mois-ci. Passez à Pro pour envoyer des demandes de signature illimitées.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.bsign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Cliquez ici</a> pour en savoir plus sur les rôles et les autorisations des utilisateurs.'
+  count_10_signature_request_emails_sent_this_month__to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mails de demande de signature envoyés ce mois-ci. Passez à Pro pour envoyer des demandes de signature illimitées.'
   test_mode_emails_limit_will_be_reset_within_24_hours: La limite d'e-mails en mode test sera réinitialisée dans les 24 heures.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Sur une échelle de 1 à 10, à quel point êtes-vous satisfait du produit DocuSeal?'
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Sur une échelle de 1 à 10, à quel point êtes-vous satisfait du produit bsign?'
   tell_us_more_about_your_experience: Parlez-nous davantage de votre expérience
   extremely_dissatisfied: Extrêmement insatisfait
   extremely_satisfied: Extrêmement satisfait
   your_pro_plan_payment_is_overdue: Le paiement de votre plan Pro est en retard.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: '<a href="%{url}" class="link">Cliquez ici</a> pour mettre à jour vos informations de paiement et régler la facture afin de garantir un service ininterrompu.'
   overdue_payment: Paiement En Retard
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Votre plan Pro a été suspendu en raison de factures impayées. Vous pouvez mettre à jour vos informations de paiement pour régler la facture et continuer à utiliser DocuSeal ou annuler votre abonnement.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Votre plan Pro a été suspendu en raison de factures impayées. Vous pouvez mettre à jour vos informations de paiement pour régler la facture et continuer à utiliser bsign ou annuler votre abonnement.
   manage_subscription: Gérer l'Abonnement
   submission_created_by_email_html: '<b>Soumission créée</b> par %{email}'
   submission_created_by_email_via_source_html: '<b>Soumission créée</b> par %{email} via %{source}'
   submission_created_via_source_html: '<b>Soumission créée</b> via %{source}'
   pro_user_seats_used: Places utilisateur Pro en cours d'utilisation
   manage_plan: Gérer le plan
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: "Cette soumission comporte plusieurs signataires, ce qui empêche l'utilisation d'un lien de partage, car il n'est pas clair quel signataire est responsable de quels champs. Pour résoudre ce problème, suivez ce <a href=\"https://www.docuseal.com/resources/pre-filling-recipients\" class=\"link font-bold\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">guide</a> pour définir les détails du signataire par défaut."
-  welcome_to_docuseal: Bienvenue sur DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: "Cette soumission comporte plusieurs signataires, ce qui empêche l'utilisation d'un lien de partage, car il n'est pas clair quel signataire est responsable de quels champs. Pour résoudre ce problème, suivez ce <a href=\"https://www.bsign.com/resources/pre-filling-recipients\" class=\"link font-bold\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">guide</a> pour définir les détails du signataire par défaut."
+  welcome_to_docuseal: Bienvenue sur bsign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Lancez une visite rapide pour apprendre à créer et envoyer votre premier document.
   start_tour: Démarrer
   name_a_z: Nom A-Z
@@ -3457,7 +3457,7 @@ fr: &fr
     settings: 'Paramètres'
     settings_account_description: "Grâce à des paramètres de compte complets, vous pouvez personnaliser l'expérience de signature électronique et inviter d'autres utilisateurs."
     support: 'Assistance'
-    support_description: 'Vous pouvez utiliser notre assistant IA ou nous écrire à support@docuseal.com si vous avez des questions.'
+    support_description: 'Vous pouvez utiliser notre assistant IA ou nous écrire à support@bsign.com si vous avez des questions.'
     settings_template_description: 'Utilisez ce bouton pour accéder à la page des paramètres de votre compte.'
   doorkeeper:
     scopes:
@@ -3522,15 +3522,15 @@ pt: &pt
   awaiting_completion_by_the_other_party: "Aguardando a conclusão pela outra parte"
   enforce_recipients_order: 'Forçar a ordem dos recipientes'
   first_party: 'Primeira Parte'
-  docuseal_trusted_signature: Assinatura Confiável DocuSeal
+  docuseal_trusted_signature: Assinatura Confiável bsign
   hello_name: Olá %{name}
   you_are_invited_to_product_name: Você está convidado para %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Você foi convidado para %{account_name} %{product_name}. Inscreva-se usando o link abaixo:'
   sent_using_product_name_in_testing_mode_html: 'Enviado usando <a href="%{product_url}">%{product_name}</a> no Modo de Teste'
   sent_using_product_name_free_document_signing_html: 'Enviado usando a assinatura gratuita de documentos de <a href="%{product_url}">%{product_name}</a>.'
-  sent_with_docuseal_pro_html: 'Enviado com <a href="%{product_url}">DocuSeal Pro</a>'
-  show_send_with_docuseal_pro_attribution_in_emails_html: Mostrar "Enviado com <span class="link">DocuSeal Pro</span>" nos e-mails
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Assine documentos com certificado confiável fornecido pela DocuSeal. Seus documentos e dados nunca são compartilhados com a DocuSeal. O checksum do PDF é fornecido para gerar uma assinatura confiável.
+  sent_with_docuseal_pro_html: 'Enviado com <a href="%{product_url}">bsign Pro</a>'
+  show_send_with_docuseal_pro_attribution_in_emails_html: Mostrar "Enviado com <span class="link">bsign Pro</span>" nos e-mails
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Assine documentos com certificado confiável fornecido pela bsign. Seus documentos e dados nunca são compartilhados com a bsign. O checksum do PDF é fornecido para gerar uma assinatura confiável.
   hi_there: Olá
   thanks: Obrigado
   you_have_been_invited_to_submit_the_name_form: 'Você foi convidado a submeter o formulário "%{name}".'
@@ -3628,7 +3628,7 @@ pt: &pt
   profile_details: Detalhes do perfil
   sign_up_with_google: Inscrever-se com Google
   sign_up_with_microsoft: Inscrever-se com Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Ao criar uma conta, você concorda com nossa <a target="_blank" href="https://www.docuseal.com/privacy">Política de Privacidade</a> e <a target="_blank" href="https://www.docuseal.com/terms">Termos de Serviço</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Ao criar uma conta, você concorda com nossa <a target="_blank" href="https://www.bsign.com/privacy">Política de Privacidade</a> e <a target="_blank" href="https://www.bsign.com/terms">Termos de Serviço</a>.'
   enter_email_to_continue: Insira o e-mail para continuar
   account: Conta
   preferences: Preferências
@@ -3649,7 +3649,7 @@ pt: &pt
   combine_completed_documents_and_audit_log: Combinar documentos concluídos e log de auditoria
   salesforce_integration: Integração com Salesforce
   salesforce_has_been_connected: Salesforce foi conectado.
-  connect_salesforce_account_to_integrate_with_docuseal: Conecte a conta Salesforce para integrar com o DocuSeal
+  connect_salesforce_account_to_integrate_with_docuseal: Conecte a conta Salesforce para integrar com o bsign
   re_connect_salesforce: Reconectar Salesforce
   connect_salesforce: Conectar Salesforce
   danger_zone: Zona de perigo
@@ -3678,13 +3678,13 @@ pt: &pt
   resetting_password: Redefinindo senha
   sign_in_with_name_account: 'Entrar com conta %{name}'
   two_factor_code_from_authenticator_app: Código de autenticação de dois fatores do aplicativo Authenticator
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Inscreva-se no console do DocuSeal para fazer o upgrade. O aplicativo local é totalmente independente, o console é usado apenas para gerenciar sua licença.
+  sign_up_in_docuseal_console_to__on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Inscreva-se no console do bsign para fazer o . O aplicativo local é totalmente independente, o console é usado apenas para gerenciar sua licença.
   send_from_email: Enviar do e-mail
   optional: opcional
   save: Salvar
   saving: Salvando
   changes_have_been_saved: As alterações foram salvas.
-  unlock_with_docuseal_pro: Desbloquear com o DocuSeal Pro
+  unlock_with_docuseal_pro: Desbloquear com o bsign Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Use seus próprios certificados para assinar e verificar arquivos PDF.
   upload_certificate: Enviar certificado
   name: Nome
@@ -3783,7 +3783,7 @@ pt: &pt
   password_has_been_changed: A senha foi alterada.
   email_integration: Integração de e-mail
   send_via_connected_email: Enviar via e-mail conectado
-  activate_with_docuseal_pro: Ativar com DocuSeal Pro
+  activate_with_docuseal_pro: Ativar com bsign Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Envie solicitações de assinatura diretamente do seu e-mail
   connect_gmail: Conectar Gmail
   re_connect_gmail: Reconectar Gmail
@@ -3797,7 +3797,7 @@ pt: &pt
   initial_setup: Configuração inicial
   demo_environment: Ambiente de demonstração
   close: Fechar
-  upgrade: Upgrade
+  : 
   settings: Configurações
   console: Console
   verify_pdf: Verificar PDF
@@ -3857,10 +3857,10 @@ pt: &pt
   send_sms: Enviar SMS
   preserve_order: Manter ordem
   when_checked_notifications_will_be_sent_to_the_second_party_once_the_form_is_completed_by_the_previous_party_uncheck_this_option_to_send_notifications_to_all_parties_simultaneously_right_away: Quando marcado, as notificações serão enviadas para a segunda parte após a conclusão do formulário pela parte anterior. Desmarque esta opção para enviar notificações para todas as partes simultaneamente.
-  upgrade_to_send_unlimited_signature_requests: Faça upgrade para enviar solicitações de assinatura ilimitadas
+  _to_send_unlimited_signature_requests: Faça  para enviar solicitações de assinatura ilimitadas
   add_without_sending: Adicionar sem enviar
-  upgade_now: Fazer upgrade agora
-  send_signature_request_emails_without_limits_with_docuseal_pro: Enviar e-mails de solicitação de assinatura sem limites com o DocuSeal Pro
+  upgade_now: Fazer  agora
+  send_signature_request_emails_without_limits_with_docuseal_pro: Enviar e-mails de solicitação de assinatura sem limites com o bsign Pro
   count_emails_used: '%{count} e-mails usados'
   has_been_connected: foi conectado
   but_not_activated: mas não ativado
@@ -3959,7 +3959,7 @@ pt: &pt
   unarchive: Desarquivar
   role: Função
   last_session: Última sessão
-  unlock_more_user_roles_with_docuseal_pro: Desbloqueie mais funções de usuário com DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Desbloqueie mais funções de usuário com bsign Pro.
   view_active: Ver ativos
   team_account: Conta de equipe
   team_accounts: Contas de equipe
@@ -4037,7 +4037,7 @@ pt: &pt
   logo_has_been_uploaded: O logotipo foi enviado.
   invalid_file_type: Tipo de arquivo inválido
   upload_file: Enviar arquivo
-  upgrade_your_plan_to_invite_more_users_contact_email: 'Faça upgrade do seu plano para convidar mais usuários (contato %{email}).'
+  _your_plan_to_invite_more_users_contact_email: 'Faça  do seu plano para convidar mais usuários (contato %{email}).'
   contact_your_admin_email_to_invite_more_users: 'Entre em contato com seu administrador %{email} para convidar mais usuários.'
   contact_your_administrator_to_add_new_users: Entre em contato com seu administrador para adicionar novos usuários.
   one_hour: 1 hora
@@ -4070,7 +4070,7 @@ pt: &pt
   start_with_pro: Começar com Pro
   user_month: usuário / mês
   developer_sandbox: Sandbox para desenvolvedores
-  upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Atualizar</a> para começar a usar em produção.'
+  _to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Atualizar</a> para começar a usar em produção.'
   download_combined_pdf: Baixar PDF combinado
   audit_log: Log de auditoria
   signers: Signatários
@@ -4165,7 +4165,7 @@ pt: &pt
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Use o código <b>%{code}</b> para entrar ou clique no link abaixo:'
   complete_sign_in: Concluir Login
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Responda a este e-mail se você não reconhecer esta tentativa de login.
-  docuseal_support: Suporte DocuSeal
+  docuseal_support: Suporte bsign
   use_the_edit_form_to_move_it_to_another_team: Use o formulário de edição para movê-lo para outra equipe.
   too_many_sms_attempts_try_again_in_a_few_seconds: Muitas tentativas de SMS. Tente novamente em alguns segundos.
   number_phone_number_is_invalid: "O número de telefone +%{number} é inválido"
@@ -4174,25 +4174,25 @@ pt: &pt
   seamlessly_automate_your_document_signing_process_with_make_com: Automatize perfeitamente seu processo de assinatura de documentos com o Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Encontre modelos Zapier adequados para automatizar seu fluxo de trabalho.
   get_started: Começar
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Clique aqui</a> para saber mais sobre os papéis e permissões dos usuários.'
-  count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mails de solicitação de assinatura enviados este mês. Faça upgrade para Pro para enviar solicitações de assinatura ilimitadas.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.bsign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Clique aqui</a> para saber mais sobre os papéis e permissões dos usuários.'
+  count_10_signature_request_emails_sent_this_month__to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 e-mails de solicitação de assinatura enviados este mês. Faça  para Pro para enviar solicitações de assinatura ilimitadas.'
   test_mode_emails_limit_will_be_reset_within_24_hours: O limite de e-mails no modo de teste será redefinido em 24 horas.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Em uma escala de 1 a 10, quão satisfeito você está com o produto DocuSeal?'
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Em uma escala de 1 a 10, quão satisfeito você está com o produto bsign?'
   tell_us_more_about_your_experience: Conte-nos mais sobre sua experiência
   extremely_dissatisfied: Extremamente insatisfeito
   extremely_satisfied: Extremamente satisfeito
   your_pro_plan_payment_is_overdue: O pagamento do seu plano Pro está atrasado.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: '<a href="%{url}" class="link">Clique aqui</a> para atualizar seus dados de pagamento e quitar a fatura para garantir um serviço ininterrupto.'
   overdue_payment: Pagamento Atrasado
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Seu plano Pro foi suspenso devido a faturas não pagas. Você pode atualizar seus dados de pagamento para quitar a fatura e continuar usando o DocuSeal ou cancelar sua assinatura.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Seu plano Pro foi suspenso devido a faturas não pagas. Você pode atualizar seus dados de pagamento para quitar a fatura e continuar usando o bsign ou cancelar sua assinatura.
   manage_subscription: Gerenciar Assinatura
   submission_created_by_email_html: '<b>Envio criado</b> por %{email}'
   submission_created_by_email_via_source_html: '<b>Envio criado</b> por %{email} via %{source}'
   submission_created_via_source_html: '<b>Envio criado</b> via %{source}'
   pro_user_seats_used: Lugares de usuário Pro em uso
   manage_plan: Gerenciar plano
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Este envio tem vários signatários, o que impede o uso de um link de compartilhamento, pois não está claro qual signatário é responsável por quais campos. Para resolver isso, siga este <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guia</a> para definir os detalhes padrão do signatário.'
-  welcome_to_docuseal: Bem-vindo ao DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Este envio tem vários signatários, o que impede o uso de um link de compartilhamento, pois não está claro qual signatário é responsável por quais campos. Para resolver isso, siga este <a href="https://www.bsign.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">guia</a> para definir os detalhes padrão do signatário.'
+  welcome_to_docuseal: Bem-vindo ao bsign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Comece um tour rápido para aprender a criar e enviar seu primeiro documento.
   start_tour: Iniciar tour
   name_a_z: Nome A-Z
@@ -4323,7 +4323,7 @@ pt: &pt
     settings: 'Configurações'
     settings_account_description: 'Com configurações completas de conta, você pode personalizar a experiência de assinatura eletrônica e convidar mais usuários.'
     support: 'Suporte'
-    support_description: 'Você pode usar nosso assistente de IA ou nos escrever para support@docuseal.com se tiver dúvidas.'
+    support_description: 'Você pode usar nosso assistente de IA ou nos escrever para support@bsign.com se tiver dúvidas.'
     settings: 'Configurações'
     settings_template_description: 'Use este botão para acessar a página de configurações da sua conta.'
   doorkeeper:
@@ -4389,15 +4389,15 @@ de: &de
   awaiting_completion_by_the_other_party: "Warten auf die Fertigstellung durch die andere Partei"
   enforce_recipients_order: 'Empfängerreihenfolge durchsetzen'
   first_party: 'Erste Partei'
-  docuseal_trusted_signature: DocuSeal-Vertrauenssignatur
+  docuseal_trusted_signature: bsign-Vertrauenssignatur
   hello_name: Hallo %{name}
   you_are_invited_to_product_name: Sie sind eingeladen zu %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'Sie wurden zu %{account_name} %{product_name} eingeladen. Bitte registrieren Sie sich über den folgenden Link:'
   sent_using_product_name_in_testing_mode_html: 'Gesendet über <a href="%{product_url}">%{product_name}</a> im Testmodus'
   sent_using_product_name_free_document_signing_html: 'Gesendet mit der kostenlosen Dokumentensignierung von <a href="%{product_url}">%{product_name}</a>.'
-  sent_with_docuseal_pro_html: Gesendet mit <a href="%{product_url}">DocuSeal Pro</a>
-  show_send_with_docuseal_pro_attribution_in_emails_html: '"Gesendet mit <span class="link">DocuSeal Pro</span>" in E-Mails anzeigen'
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Unterzeichnen Sie Dokumente mit einem vertrauenswürdigen Zertifikat von DocuSeal. Ihre Dokumente und Daten werden niemals mit DocuSeal geteilt. Eine PDF-Prüfziffer wird bereitgestellt, um eine vertrauenswürdige Signatur zu generieren.
+  sent_with_docuseal_pro_html: Gesendet mit <a href="%{product_url}">bsign Pro</a>
+  show_send_with_docuseal_pro_attribution_in_emails_html: '"Gesendet mit <span class="link">bsign Pro</span>" in E-Mails anzeigen'
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Unterzeichnen Sie Dokumente mit einem vertrauenswürdigen Zertifikat von bsign. Ihre Dokumente und Daten werden niemals mit bsign geteilt. Eine PDF-Prüfziffer wird bereitgestellt, um eine vertrauenswürdige Signatur zu generieren.
   hi_there: Hallo
   thanks: Danke
   you_have_been_invited_to_submit_the_name_form: 'Du wurdest eingeladen, das Formular "%{name}" einzureichen.'
@@ -4495,7 +4495,7 @@ de: &de
   profile_details: Profildetails
   sign_up_with_google: Mit Google registrieren
   sign_up_with_microsoft: Mit Microsoft registrieren
-  by_creating_an_account_you_agree_to_our_html: 'Durch die Erstellung eines Kontos stimmst du unseren <a target="_blank" href="https://www.docuseal.com/privacy">Datenschutzrichtlinien</a> und <a target="_blank" href="https://www.docuseal.com/terms">Nutzungsbedingungen</a> zu.'
+  by_creating_an_account_you_agree_to_our_html: 'Durch die Erstellung eines Kontos stimmst du unseren <a target="_blank" href="https://www.bsign.com/privacy">Datenschutzrichtlinien</a> und <a target="_blank" href="https://www.bsign.com/terms">Nutzungsbedingungen</a> zu.'
   enter_email_to_continue: E-Mail eingeben, um fortzufahren
   account: Konto
   preferences: Einstellungen
@@ -4516,7 +4516,7 @@ de: &de
   combine_completed_documents_and_audit_log: Abgeschlossene Dokumente und Prüfprotokoll kombinieren
   salesforce_integration: Salesforce-Integration
   salesforce_has_been_connected: Salesforce wurde verbunden.
-  connect_salesforce_account_to_integrate_with_docuseal: Verbinde dein Salesforce-Konto, um es mit DocuSeal zu integrieren
+  connect_salesforce_account_to_integrate_with_docuseal: Verbinde dein Salesforce-Konto, um es mit bsign zu integrieren
   re_connect_salesforce: Salesforce erneut verbinden
   connect_salesforce: Salesforce verbinden
   danger_zone: Gefahrenzone
@@ -4545,13 +4545,13 @@ de: &de
   resetting_password: Passwort wird zurückgesetzt
   sign_in_with_name_account: 'Mit %{name}-Konto anmelden'
   two_factor_code_from_authenticator_app: Zwei-Faktor-Code aus der Authenticator-App
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Melde dich in der DocuSeal-Konsole an, um ein Upgrade durchzuführen. Die lokale App ist völlig eigenständig, die Konsole wird nur zur Verwaltung deiner Lizenz verwendet.
+  sign_up_in_docuseal_console_to__on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Melde dich in der bsign-Konsole an, um ein  durchzuführen. Die lokale App ist völlig eigenständig, die Konsole wird nur zur Verwaltung deiner Lizenz verwendet.
   send_from_email: Von E-Mail senden
   optional: optional
   save: Speichern
   saving: Speichern
   changes_have_been_saved: Änderungen wurden gespeichert.
-  unlock_with_docuseal_pro: Mit DocuSeal Pro entsperren
+  unlock_with_docuseal_pro: Mit bsign Pro entsperren
   use_your_own_certificates_to_sign_and_verify_pdf_files: Verwende deine eigenen Zertifikate, um PDF-Dateien zu signieren und zu verifizieren.
   upload_certificate: Zertifikat hochladen
   name: Name
@@ -4650,7 +4650,7 @@ de: &de
   password_has_been_changed: Das Passwort wurde geändert.
   email_integration: E-Mail-Integration
   send_via_connected_email: Über verbundene E-Mail senden
-  activate_with_docuseal_pro: Mit DocuSeal Pro aktivieren
+  activate_with_docuseal_pro: Mit bsign Pro aktivieren
   send_signature_request_to_your_recipients_directly_from_your_email: Sende eine Unterschriftsanfrage direkt von deiner E-Mail aus
   connect_gmail: Gmail verbinden
   re_connect_gmail: Gmail erneut verbinden
@@ -4664,7 +4664,7 @@ de: &de
   initial_setup: Erste Einrichtung
   demo_environment: Demo-Umgebung
   close: Schließen
-  upgrade: Upgrade
+  : 
   settings: Einstellungen
   console: Konsole
   verify_pdf: PDF verifizieren
@@ -4724,10 +4724,10 @@ de: &de
   send_sms: SMS senden
   preserve_order: Reihenfolge beibehalten
   when_checked_notifications_will_be_sent_to_the_second_party_once_the_form_is_completed_by_the_previous_party_uncheck_this_option_to_send_notifications_to_all_parties_simultaneously_right_away: Wenn aktiviert, werden Benachrichtigungen an die zweite Partei gesendet, sobald die vorherige Partei das Formular ausgefüllt hat. Deaktiviere diese Option, um Benachrichtigungen an alle Parteien gleichzeitig sofort zu senden.
-  upgrade_to_send_unlimited_signature_requests: Upgrade durchführen, um unbegrenzte Unterschriftsanfragen zu senden
+  _to_send_unlimited_signature_requests:  durchführen, um unbegrenzte Unterschriftsanfragen zu senden
   add_without_sending: Hinzufügen ohne zu senden
-  upgade_now: Jetzt upgraden
-  send_signature_request_emails_without_limits_with_docuseal_pro: Unterschriftsanfragen ohne Limits mit DocuSeal Pro senden
+  upgade_now: Jetzt n
+  send_signature_request_emails_without_limits_with_docuseal_pro: Unterschriftsanfragen ohne Limits mit bsign Pro senden
   count_emails_used: '%{count} E-Mails verwendet'
   has_been_connected: wurde verbunden
   but_not_activated: aber nicht aktiviert
@@ -4826,7 +4826,7 @@ de: &de
   unarchive: Entarchivieren
   role: Rolle
   last_session: Letzte Sitzung
-  unlock_more_user_roles_with_docuseal_pro: Weitere Benutzerrollen mit DocuSeal Pro freischalten.
+  unlock_more_user_roles_with_docuseal_pro: Weitere Benutzerrollen mit bsign Pro freischalten.
   view_active: Aktive anzeigen
   team_account: Teamkonto
   team_accounts: Teamkonten
@@ -4904,7 +4904,7 @@ de: &de
   logo_has_been_uploaded: Das Logo wurde hochgeladen.
   invalid_file_type: Ungültiger Dateityp
   upload_file: Datei hochladen
-  upgrade_your_plan_to_invite_more_users_contact_email: 'Führe ein Upgrade durch, um mehr Benutzer einzuladen (Kontakt %{email}).'
+  _your_plan_to_invite_more_users_contact_email: 'Führe ein  durch, um mehr Benutzer einzuladen (Kontakt %{email}).'
   contact_your_admin_email_to_invite_more_users: 'Kontaktiere deinen Administrator %{email}, um mehr Benutzer einzuladen.'
   contact_your_administrator_to_add_new_users: Kontaktiere deinen Administrator, um neue Benutzer hinzuzufügen.
   one_hour: 1 Stunde
@@ -4937,7 +4937,7 @@ de: &de
   start_with_pro: Mit Pro starten
   user_month: Benutzer / Monat
   developer_sandbox: Entwickler-Sandbox
-  upgrade_to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold">Upgrade</a> um mit der Produktion zu starten.'
+  _to_start_using_in_production_html: '<a href="%{url}" target="_blank" class="link font-semibold"></a> um mit der Produktion zu starten.'
   download_combined_pdf: Kombiniertes PDF herunterladen
   audit_log: Prüfprotokoll
   signers: Unterzeichner
@@ -5032,7 +5032,7 @@ de: &de
   use_otp_code_to_sign_in_or_click_the_link_below_html: 'Verwenden Sie den Code <b>%{code}</b>, um sich anzumelden, oder klicken Sie auf den untenstehenden Link:'
   complete_sign_in: Anmeldung abschließen
   please_reply_to_this_email_if_you_dont_recognize_this_sign_in_attempt: Bitte antworten Sie auf diese E-Mail, wenn Sie diesen Anmeldeversuch nicht erkennen.
-  docuseal_support: DocuSeal Support
+  docuseal_support: bsign Support
   use_the_edit_form_to_move_it_to_another_team: Verwenden Sie das Bearbeitungsformular, um ihn in ein anderes Team zu verschieben.
   too_many_sms_attempts_try_again_in_a_few_seconds: Zu viele SMS-Versuche. Versuchen Sie es in ein paar Sekunden erneut.
   number_phone_number_is_invalid: "Die Telefonnummer +%{number} ist ungültig"
@@ -5041,25 +5041,25 @@ de: &de
   seamlessly_automate_your_document_signing_process_with_make_com: Automatisieren Sie Ihren Dokumentenunterzeichnungsprozess nahtlos mit Make.com.
   find_suitable_zapier_templates_to_automate_your_workflow: Finden Sie passende Zapier-Vorlagen, um Ihren Workflow zu automatisieren.
   get_started: Loslegen
-  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.docuseal.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Klicken Sie hier</a>, um mehr über Benutzerrollen und -berechtigungen zu erfahren.'
-  count_10_signature_request_emails_sent_this_month_upgrade_to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 Signaturanfrage-E-Mails wurden diesen Monat gesendet. Upgraden Sie zu Pro, um unbegrenzte Signaturanfragen zu senden.'
+  click_here_to_learn_more_about_user_roles_and_permissions_html: '<a href="https://www.bsign.com/resources/manage-users-and-roles" class="link" rel="noopener noreferrer nofollow" target="_blank">Klicken Sie hier</a>, um mehr über Benutzerrollen und -berechtigungen zu erfahren.'
+  count_10_signature_request_emails_sent_this_month__to_pro_to_send_unlimited_signature_request_email: '%{count} / 10 Signaturanfrage-E-Mails wurden diesen Monat gesendet. n Sie zu Pro, um unbegrenzte Signaturanfragen zu senden.'
   test_mode_emails_limit_will_be_reset_within_24_hours: Das Limit für E-Mails im Testmodus wird innerhalb von 24 Stunden zurückgesetzt.
-  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Auf einer Skala von 1 bis 10, wie zufrieden sind Sie mit dem DocuSeal-Produkt?'
+  on_a_scale_of_1_to_10_how_satisfied_are_you_with_the_docuseal_product_: 'Auf einer Skala von 1 bis 10, wie zufrieden sind Sie mit dem bsign-Produkt?'
   tell_us_more_about_your_experience: Erzählen Sie uns mehr über Ihre Erfahrung
   extremely_dissatisfied: Extrem unzufrieden
   extremely_satisfied: Extrem zufrieden
   your_pro_plan_payment_is_overdue: Ihre Zahlung für den Pro-Plan ist überfällig.
   click_here_to_update_your_payment_details_and_clear_the_invoice_to_ensure_uninterrupted_service_html: '<a href="%{url}" class="link">Klicken Sie hier</a>, um Ihre Zahlungsdaten zu aktualisieren und die Rechnung zu begleichen, um einen unterbrechungsfreien Service sicherzustellen.'
   overdue_payment: Überfällige Zahlung
-  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Ihr Pro-Plan wurde aufgrund unbezahlter Rechnungen ausgesetzt. Sie können Ihre Zahlungsdaten aktualisieren, um die Rechnung zu begleichen und DocuSeal weiterhin zu nutzen, oder Ihr Abonnement kündigen.
+  your_pro_plan_has_been_suspended_due_to_unpaid_invoices_you_can_update_your_payment_details_to_settle_the_invoice_and_continue_using_docuseal_or_cancel_your_subscription: Ihr Pro-Plan wurde aufgrund unbezahlter Rechnungen ausgesetzt. Sie können Ihre Zahlungsdaten aktualisieren, um die Rechnung zu begleichen und bsign weiterhin zu nutzen, oder Ihr Abonnement kündigen.
   manage_subscription: Abonnement Verwalten
   submission_created_by_email_html: '<b>Übermittlung erstellt</b> von %{email}'
   submission_created_by_email_via_source_html: '<b>Übermittlung erstellt</b> durch %{email} über %{source}'
   submission_created_via_source_html: '<b>Übermittlung erstellt</b> über %{source}'
   pro_user_seats_used: Verwendete Pro-Benutzerplätze
   manage_plan: Plan verwalten
-  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Diese Übermittlung hat mehrere Unterzeichner, was die Nutzung eines Freigabelinks verhindert, da unklar ist, welcher Unterzeichner für welche Felder verantwortlich ist. Um dies zu lösen, folgen Sie dieser <a href="https://www.docuseal.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">Anleitung</a>, um die Standarddetails des Unterzeichners festzulegen.'
-  welcome_to_docuseal: Willkommen bei DocuSeal
+  this_submission_has_multiple_signers_which_prevents_the_use_of_a_sharing_link_html: 'Diese Übermittlung hat mehrere Unterzeichner, was die Nutzung eines Freigabelinks verhindert, da unklar ist, welcher Unterzeichner für welche Felder verantwortlich ist. Um dies zu lösen, folgen Sie dieser <a href="https://www.bsign.com/resources/pre-filling-recipients" class="link font-bold" rel="noopener noreferrer nofollow" target="_blank">Anleitung</a>, um die Standarddetails des Unterzeichners festzulegen.'
+  welcome_to_docuseal: Willkommen bei bsign
   start_a_quick_tour_to_learn_how_to_create_an_send_your_first_document: Starte eine kurze Tour, um zu lernen, wie du dein erstes Dokument erstellst und versendest.
   start_tour: Starten
   name_a_z: Name A-Z
@@ -5190,7 +5190,7 @@ de: &de
     settings: 'Einstellungen'
     settings_account_description: 'Mit umfangreichen Kontoeinstellungen kannst du das Signiererlebnis anpassen und weitere Benutzer einladen.'
     support: 'Support'
-    support_description: 'Du kannst unseren KI-Assistenten nutzen oder uns bei Fragen an support@docuseal.com schreiben.'
+    support_description: 'Du kannst unseren KI-Assistenten nutzen oder uns bei Fragen an support@bsign.com schreiben.'
     settings_template_description: 'Mit diesem Button gelangst du zu den Kontoeinstellungen.'
   doorkeeper:
     scopes:
@@ -5278,7 +5278,7 @@ pl:
   profile_details: Szczegóły profilu
   sign_up_with_google: Zarejestruj się przez Google
   sign_up_with_microsoft: Zarejestruj się przez Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Tworząc konto, akceptujesz naszą <a target="_blank" href="https://www.docuseal.com/privacy">Politykę Prywatności</a> i <a target="_blank" href="https://www.docuseal.com/terms">Regulamin</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Tworząc konto, akceptujesz naszą <a target="_blank" href="https://www.bsign.com/privacy">Politykę Prywatności</a> i <a target="_blank" href="https://www.bsign.com/terms">Regulamin</a>.'
   enter_email_to_continue: Wprowadź e-mail, aby kontynuować
   the_code_has_been_sent_to_your_email: Kod został wysłany na Twój e-mail.
   enter_the_verification_code_from_your_email: Wprowadź kod weryfikacyjny z Twojego e-maila.
@@ -5367,7 +5367,7 @@ uk:
   profile_details: Дані профілю
   sign_up_with_google: Зареєструватися через Google
   sign_up_with_microsoft: Зареєструватися через Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Створюючи акаунт, ви погоджуєтесь з нашою <a target="_blank" href="https://www.docuseal.com/privacy">Політикою конфіденційності</a> і <a target="_blank" href="https://www.docuseal.com/terms">Умовами надання послуг</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Створюючи акаунт, ви погоджуєтесь з нашою <a target="_blank" href="https://www.bsign.com/privacy">Політикою конфіденційності</a> і <a target="_blank" href="https://www.bsign.com/terms">Умовами надання послуг</a>.'
   enter_email_to_continue: Введіть електронну пошту, щоб продовжити
   the_code_has_been_sent_to_your_email: Код було надіслано на вашу електронну пошту.
   enter_the_verification_code_from_your_email: Введіть код перевірки з вашої електронної пошти.
@@ -5456,7 +5456,7 @@ cs:
   profile_details: Detaily profilu
   sign_up_with_google: Zaregistrovat se pomocí Googlu
   sign_up_with_microsoft: Zaregistrovat se pomocí Microsoftu
-  by_creating_an_account_you_agree_to_our_html: 'Vytvořením účtu souhlasíte s našimi <a target="_blank" href="https://www.docuseal.com/privacy">Zásadami ochrany osobních údajů</a> a <a target="_blank" href="https://www.docuseal.com/terms">Podmínkami služby</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Vytvořením účtu souhlasíte s našimi <a target="_blank" href="https://www.bsign.com/privacy">Zásadami ochrany osobních údajů</a> a <a target="_blank" href="https://www.bsign.com/terms">Podmínkami služby</a>.'
   enter_email_to_continue: Zadejte e-mail pro pokračování
   the_code_has_been_sent_to_your_email: Kód byl odeslán na váš e-mail.
   enter_the_verification_code_from_your_email: Zadejte ověřovací kód z vašeho e-mailu.
@@ -5545,7 +5545,7 @@ he:
   profile_details: פרטי הפרופיל
   sign_up_with_google: הירשם עם גוגל
   sign_up_with_microsoft: הירשם עם מיקרוסופט
-  by_creating_an_account_you_agree_to_our_html: 'על ידי יצירת חשבון, אתה מסכים ל<a target="_blank" href="https://www.docuseal.com/privacy">מדיניות הפרטיות</a> ול<a target="_blank" href="https://www.docuseal.com/terms">תנאי השירות</a> שלנו.'
+  by_creating_an_account_you_agree_to_our_html: 'על ידי יצירת חשבון, אתה מסכים ל<a target="_blank" href="https://www.bsign.com/privacy">מדיניות הפרטיות</a> ול<a target="_blank" href="https://www.bsign.com/terms">תנאי השירות</a> שלנו.'
   enter_email_to_continue: הכנס דוא"ל כדי להמשיך
   the_code_has_been_sent_to_your_email: הקוד נשלח לדוא"ל שלך.
   enter_the_verification_code_from_your_email: הזן את קוד האימות מדוא"ל שלך.
@@ -5634,7 +5634,7 @@ nl:
   profile_details: Profielgegevens
   sign_up_with_google: Aanmelden met Google
   sign_up_with_microsoft: Aanmelden met Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'Door een account aan te maken, ga je akkoord met ons <a target="_blank" href="https://www.docuseal.com/privacy">Privacybeleid</a> en onze <a target="_blank" href="https://www.docuseal.com/terms">Gebruiksvoorwaarden</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'Door een account aan te maken, ga je akkoord met ons <a target="_blank" href="https://www.bsign.com/privacy">Privacybeleid</a> en onze <a target="_blank" href="https://www.bsign.com/terms">Gebruiksvoorwaarden</a>.'
   enter_email_to_continue: Voer e-mail in om door te gaan
   the_code_has_been_sent_to_your_email: De code is naar uw e-mail verzonden.
   enter_the_verification_code_from_your_email: Voer de verificatiecode uit uw e-mail in.
@@ -5723,7 +5723,7 @@ ar:
   profile_details: تفاصيل الملف الشخصي
   sign_up_with_google: الاشتراك باستخدام جوجل
   sign_up_with_microsoft: الاشتراك باستخدام مايكروسوفت
-  by_creating_an_account_you_agree_to_our_html: 'من خلال إنشاء حساب، فإنك توافق على <a target="_blank" href="https://www.docuseal.com/privacy">سياسة الخصوصية</a> و<a target="_blank" href="https://www.docuseal.com/terms">شروط الخدمة</a> الخاصة بنا.'
+  by_creating_an_account_you_agree_to_our_html: 'من خلال إنشاء حساب، فإنك توافق على <a target="_blank" href="https://www.bsign.com/privacy">سياسة الخصوصية</a> و<a target="_blank" href="https://www.bsign.com/terms">شروط الخدمة</a> الخاصة بنا.'
   enter_email_to_continue: أدخل البريد الإلكتروني للمتابعة
   the_code_has_been_sent_to_your_email: تم إرسال الرمز إلى بريدك الإلكتروني.
   enter_the_verification_code_from_your_email: أدخل رمز التحقق من بريدك الإلكتروني.
@@ -5812,7 +5812,7 @@ ko:
   profile_details: 프로필 세부 정보
   sign_up_with_google: Google로 가입
   sign_up_with_microsoft: Microsoft로 가입
-  by_creating_an_account_you_agree_to_our_html: '계정을 생성함으로써, 귀하는 우리의 <a target="_blank" href="https://www.docuseal.com/privacy">개인정보 보호정책</a> 및 <a target="_blank" href="https://www.docuseal.com/terms">서비스 약관</a>에 동의하는 것입니다.'
+  by_creating_an_account_you_agree_to_our_html: '계정을 생성함으로써, 귀하는 우리의 <a target="_blank" href="https://www.bsign.com/privacy">개인정보 보호정책</a> 및 <a target="_blank" href="https://www.bsign.com/terms">서비스 약관</a>에 동의하는 것입니다.'
   enter_email_to_continue: 계속하려면 이메일을 입력하세요
   the_code_has_been_sent_to_your_email: 코드가 이메일로 전송되었습니다.
   enter_the_verification_code_from_your_email: 이메일에서 인증 코드를 입력하세요.
@@ -5901,7 +5901,7 @@ ja:
   profile_details: プロフィールの詳細
   sign_up_with_google: Googleで登録
   sign_up_with_microsoft: Microsoftで登録
-  by_creating_an_account_you_agree_to_our_html: '<a target="_blank" href="https://www.docuseal.com/privacy">プライバシーポリシー</a>および<a target="_blank" href="https://www.docuseal.com/terms">利用規約</a>に同意の上、アカウントを作成します。'
+  by_creating_an_account_you_agree_to_our_html: '<a target="_blank" href="https://www.bsign.com/privacy">プライバシーポリシー</a>および<a target="_blank" href="https://www.bsign.com/terms">利用規約</a>に同意の上、アカウントを作成します。'
   enter_email_to_continue: 続行するにはメールを入力してください
   the_code_has_been_sent_to_your_email: コードがあなたのメールに送信されました
   enter_the_verification_code_from_your_email: メールに記載された認証コードを入力してください

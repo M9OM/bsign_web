@@ -15,9 +15,9 @@ module Submissions
 
       io = StringIO.new
 
-      pdf.trailer.info[:Creator] = "#{Docuseal.product_name} (#{Docuseal::PRODUCT_URL})"
+      pdf.trailer.info[:Creator] = "#{bsign.product_name} (#{bsign::PRODUCT_URL})"
 
-      if Docuseal.pdf_format == 'pdf/a-3b'
+      if bsign.pdf_format == 'pdf/a-3b'
         pdf.task(:pdfa, level: '3b')
         pdf.config['font.map'] = GenerateResultAttachments::PDFA_FONT_MAP
       end

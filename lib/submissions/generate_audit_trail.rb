@@ -41,7 +41,7 @@ module Submissions
 
         io = StringIO.new
 
-        document.trailer.info[:Creator] = "#{Docuseal.product_name} (#{Docuseal::PRODUCT_URL})"
+        document.trailer.info[:Creator] = "#{bsign.product_name} (#{bsign::PRODUCT_URL})"
 
         if pkcs
           sign_params = {
@@ -70,7 +70,7 @@ module Submissions
     def build_audit_trail(submission)
       account = submission.account
       verify_url = Rails.application.routes.url_helpers.settings_esign_url(
-        **Docuseal.default_url_options, host: ENV.fetch('EMAIL_HOST', Docuseal.default_url_options[:host])
+        **bsign.default_url_options, host: ENV.fetch('EMAIL_HOST', bsign.default_url_options[:host])
       )
 
       page_size =
@@ -82,7 +82,7 @@ module Submissions
 
       composer = HexaPDF::Composer.new(skip_page_creation: true)
 
-      if Docuseal.pdf_format == 'pdf/a-3b'
+      if bsign.pdf_format == 'pdf/a-3b'
         composer.document.task(:pdfa, level: '3b')
       elsif FONT_NAME == 'GoNotoKurrent'
         composer.document.task(:pdfa)
@@ -443,7 +443,7 @@ module Submissions
     end
 
     def sign_reason
-      'Signed with DocuSeal.com'
+      'Signed with bsign.com'
     end
 
     def maybe_add_background(_canvas, _submission, _page_size); end
@@ -455,8 +455,8 @@ module Submissions
     def add_logo(column, _submission = nil)
       column.image(PdfIcons.logo_io, width: 40, height: 40, position: :float)
 
-      column.formatted_text([{ text: 'DocuSeal',
-                               link: Docuseal::PRODUCT_EMAIL_URL }],
+      column.formatted_text([{ text: 'bsign',
+                               link: bsign::PRODUCT_EMAIL_URL }],
                             font_size: 20,
                             font: [FONT_NAME, { variant: :bold }],
                             width: 100,
