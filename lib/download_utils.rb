@@ -14,7 +14,7 @@ module DownloadUtils
       Addressable::URI.parse(url).normalize
     end
 
-    if bsign.multitenant?
+    if Docuseal.multitenant?
       raise UnableToDownload, "Error loading: #{uri}. Only HTTPS is allowed." if uri.scheme != 'https'
       raise UnableToDownload, "Error loading: #{uri}. Can't download from localhost." if uri.host.in?(LOCALHOSTS)
     end

@@ -5,7 +5,7 @@
 ```angular
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { DocusealBuilderComponent } from '@bsign/angular';
+import { DocusealBuilderComponent } from '@docuseal/angular';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ import { DocusealBuilderComponent } from '@bsign/angular';
   template: `
     <div class="app">
       <ng-container *ngIf="token">
-        <bsign-builder [token]="token"></bsign-builder>
+        <docuseal-builder [token]="token"></docuseal-builder>
       </ng-container>
     </div>
   `
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.post('/api/bsign/builder_token', {}).subscribe((data: any) => {
+    this.http.post('/api/docuseal/builder_token', {}).subscribe((data: any) => {
       this.token = data.token;
     });
   }
@@ -104,7 +104,7 @@ const token = jwt.sign({
   "host": {
     "type": "string",
     "required": false,
-    "description": "bsign host domain name. Only use this attribute if you are using the on-premises bsign installation or bsign.eu Cloud.",
+    "description": "DocuSeal host domain name. Only use this attribute if you are using the on-premises DocuSeal installation or docuseal.eu Cloud.",
     "example": "yourdomain.com"
   },
   "customButton": {
@@ -478,7 +478,7 @@ const token = jwt.sign({
     "type": "object",
     "required": false,
     "default": "{}",
-    "description": "Object that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/bsign/blob/master/app/javascript/template_builder/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">template_builder/i18n.js</a> for available i18n keys."
+    "description": "Object that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/docuseal/blob/master/app/javascript/template_builder/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">template_builder/i18n.js</a> for available i18n keys."
   },
   "backgroundColor": {
     "type": "string",

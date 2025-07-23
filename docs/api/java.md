@@ -3,7 +3,7 @@
 The API endpoint provides the ability to retrieve a list of available document templates.
 
 ```java
-HttpResponse<String> response = Unirest.get("https://api.bsign.com/templates")
+HttpResponse<String> response = Unirest.get("https://api.docuseal.com/templates")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -103,7 +103,7 @@ HttpResponse<String> response = Unirest.get("https://api.bsign.com/templates")
 The API endpoint provides the functionality to retrieve information about a document template.
 
 ```java
-HttpResponse<String> response = Unirest.get("https://api.bsign.com/templates/1000001")
+HttpResponse<String> response = Unirest.get("https://api.docuseal.com/templates/1000001")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -140,7 +140,7 @@ HttpResponse<String> response = Unirest.get("https://api.bsign.com/templates/100
 The API endpoint allows you to archive a document template.
 
 ```java
-HttpResponse<String> response = Unirest.delete("https://api.bsign.com/templates/1000001")
+HttpResponse<String> response = Unirest.delete("https://api.docuseal.com/templates/1000001")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -177,7 +177,7 @@ HttpResponse<String> response = Unirest.delete("https://api.bsign.com/templates/
 The API endpoint provides the functionality to move a document template to a different folder and update the name of the template.
 
 ```java
-HttpResponse<String> response = Unirest.put("https://api.bsign.com/templates/1000001")
+HttpResponse<String> response = Unirest.put("https://api.docuseal.com/templates/1000001")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"name\":\"New Document Name\",\"folder_name\":\"New Folder\"}")
@@ -253,7 +253,7 @@ HttpResponse<String> response = Unirest.put("https://api.bsign.com/templates/100
 The API endpoint provides the ability to retrieve a list of available submissions.
 
 ```java
-HttpResponse<String> response = Unirest.get("https://api.bsign.com/submissions")
+HttpResponse<String> response = Unirest.get("https://api.docuseal.com/submissions")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -365,10 +365,10 @@ HttpResponse<String> response = Unirest.get("https://api.bsign.com/submissions")
 
 ### Create a submission
 
-This API endpoint allows you to create signature requests (submissions) for a document template and send them to the specified submitters (signers).<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/send-documents-for-signature-via-api" class="link">Send documents for signature via API</a><br><a href="https://www.bsign.com/guides/pre-fill-pdf-document-form-fields-with-api" class="link">Pre-fill PDF document form fields with API</a>
+This API endpoint allows you to create signature requests (submissions) for a document template and send them to the specified submitters (signers).<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/send-documents-for-signature-via-api" class="link">Send documents for signature via API</a><br><a href="https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api" class="link">Pre-fill PDF document form fields with API</a>
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/submissions")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"template_id\":1000001,\"send_email\":true,\"submitters\":[{\"role\":\"First Party\",\"email\":\"john.doe@example.com\"}]}")
@@ -401,7 +401,7 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions"
           "properties": {
             "template_id": {
               "type": "integer",
-              "description": "The unique identifier of the template. Document template forms can be created via the Web UI, <a href=\"https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form\" class=\"link\">PDF and DOCX API</a>, or <a href=\"https://www.bsign.com/guides/create-pdf-document-fillable-form-with-html-api\" class=\"link\">HTML API</a>.",
+              "description": "The unique identifier of the template. Document template forms can be created via the Web UI, <a href=\"https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form\" class=\"link\">PDF and DOCX API</a>, or <a href=\"https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api\" class=\"link\">HTML API</a>.",
               "example": 1000001
             },
             "send_email": {
@@ -719,7 +719,7 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions"
 The API endpoint provides the functionality to retrieve information about a submission.
 
 ```java
-HttpResponse<String> response = Unirest.get("https://api.bsign.com/submissions/1001")
+HttpResponse<String> response = Unirest.get("https://api.docuseal.com/submissions/1001")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -756,7 +756,7 @@ HttpResponse<String> response = Unirest.get("https://api.bsign.com/submissions/1
 The API endpoint allows you to archive a submission.
 
 ```java
-HttpResponse<String> response = Unirest.delete("https://api.bsign.com/submissions/1001")
+HttpResponse<String> response = Unirest.delete("https://api.docuseal.com/submissions/1001")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -793,7 +793,7 @@ HttpResponse<String> response = Unirest.delete("https://api.bsign.com/submission
 This endpoint returns a list of partially filled documents for a submission. If the submission has been completed, the final signed documents are returned.
 
 ```java
-HttpResponse<String> response = Unirest.get("https://api.bsign.com/submissions/1001/documents")
+HttpResponse<String> response = Unirest.get("https://api.docuseal.com/submissions/1001/documents")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -830,10 +830,10 @@ HttpResponse<String> response = Unirest.get("https://api.bsign.com/submissions/1
 This API endpoint allows you to create submissions for a document template and send them to the specified email addresses. This is a simplified version of the POST /submissions API to be used with Zapier or other automation tools.
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions/emails")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/submissions/emails")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
-  .body("{\"template_id\":1000001,\"emails\":\"hi@bsign.com, example@bsign.com\"}")
+  .body("{\"template_id\":1000001,\"emails\":\"hi@docuseal.com, example@docuseal.com\"}")
   .asString();
 ```
 
@@ -902,7 +902,7 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions/
 The API endpoint provides functionality to retrieve information about a submitter, along with the submitter documents and field values.
 
 ```java
-HttpResponse<String> response = Unirest.get("https://api.bsign.com/submitters/500001")
+HttpResponse<String> response = Unirest.get("https://api.docuseal.com/submitters/500001")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -936,10 +936,10 @@ HttpResponse<String> response = Unirest.get("https://api.bsign.com/submitters/50
 
 ### Update a submitter
 
-The API endpoint allows you to update submitter details, pre-fill or update field values and re-send emails.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/pre-fill-pdf-document-form-fields-with-api#automatically_sign_documents_via_api" class="link">Automatically sign documents via API</a>
+The API endpoint allows you to update submitter details, pre-fill or update field values and re-send emails.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api#automatically_sign_documents_via_api" class="link">Automatically sign documents via API</a>
 
 ```java
-HttpResponse<String> response = Unirest.put("https://api.bsign.com/submitters/500001")
+HttpResponse<String> response = Unirest.put("https://api.docuseal.com/submitters/500001")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"email\":\"john.doe@example.com\",\"fields\":[{\"name\":\"First Name\",\"default_value\":\"Acme\"}]}")
@@ -1210,7 +1210,7 @@ HttpResponse<String> response = Unirest.put("https://api.bsign.com/submitters/50
 The API endpoint provides the ability to retrieve a list of submitters.
 
 ```java
-HttpResponse<String> response = Unirest.get("https://api.bsign.com/submitters")
+HttpResponse<String> response = Unirest.get("https://api.docuseal.com/submitters")
   .header("X-Auth-Token", "API_KEY")
   .asString();
 ```
@@ -1323,7 +1323,7 @@ HttpResponse<String> response = Unirest.get("https://api.bsign.com/submitters")
 The API endpoint allows you to add, remove or replace documents in the template with provided PDF/DOCX file or HTML content.
 
 ```java
-HttpResponse<String> response = Unirest.put("https://api.bsign.com/templates/1000001/documents")
+HttpResponse<String> response = Unirest.put("https://api.docuseal.com/templates/1000001/documents")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"documents\":[{\"file\":\"string\"}]}")
@@ -1417,7 +1417,7 @@ HttpResponse<String> response = Unirest.put("https://api.bsign.com/templates/100
 The API endpoint allows you to clone existing template into a new template.
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/1000001/clone")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/templates/1000001/clone")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"name\":\"Cloned Template\"}")
@@ -1478,10 +1478,10 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/10
 
 ### Create a template from HTML
 
-The API endpoint provides the functionality to seamlessly generate a PDF document template by utilizing the provided HTML content while incorporating pre-defined fields.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
+The API endpoint provides the functionality to seamlessly generate a PDF document template by utilizing the provided HTML content while incorporating pre-defined fields.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/html")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/templates/html")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"html\":\"<p>Lorem Ipsum is simply dummy text of the\\n<text-field\\n  name=\\\"Industry\\\"\\n  role=\\\"First Party\\\"\\n  required=\\\"false\\\"\\n  style=\\\"width: 80px; height: 16px; display: inline-block; margin-bottom: -4px\\\">\\n</text-field>\\nand typesetting industry</p>\\n\",\"name\":\"Test Template\"}")
@@ -1594,11 +1594,11 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/ht
 
 ### Create a template from Word DOCX
 
-The API endpoint provides the functionality to create a fillable document template for existing Microsoft Word document. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.docx" target="_blank" class="link font-bold" >https://www.bsign.com/examples/fieldtags.docx</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create a fillable document template for existing Microsoft Word document. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.docx" target="_blank" class="link font-bold" >https://www.docuseal.com/examples/fieldtags.docx</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/docx")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/templates/docx")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"name\":\"Test DOCX\",\"documents\":[{\"name\":\"string\",\"file\":\"base64\"}]}")
@@ -1866,11 +1866,11 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/do
 
 ### Create a template from existing PDF
 
-The API endpoint provides the functionality to create a fillable document template for existing PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.bsign.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create a fillable document template for existing PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.docuseal.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/pdf")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/templates/pdf")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"name\":\"Test PDF\",\"documents\":[{\"name\":\"string\",\"file\":\"base64\",\"fields\":[{\"name\":\"string\",\"areas\":[{\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"page\":1}]}]}]}")
@@ -2154,7 +2154,7 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/pd
 The API endpoint allows you to merge multiple templates with documents and fields into a new combined template.
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/merge")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/templates/merge")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"template_ids\":[321,432],\"name\":\"Merged Template\"}")
@@ -2234,11 +2234,11 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/me
 
 ### Create a submission from PDF
 
-The API endpoint provides the functionality to create one-off submission request from a PDF or DOCX file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.bsign.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create one-off submission request from a PDF or DOCX file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.docuseal.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions/pdf")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/submissions/pdf")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"name\":\"Test Submission Document\",\"documents\":[{\"name\":\"string\",\"file\":\"base64\",\"fields\":[{\"name\":\"string\",\"areas\":[{\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"page\":1}]}]}],\"submitters\":[{\"role\":\"First Party\",\"email\":\"john.doe@example.com\"}]}")
@@ -2725,10 +2725,10 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions/
 
 ### Create a submission from HTML
 
-This API endpoint allows you to create a one-off submission request document using the provided HTML content, with special field tags rendered as a fillable and signable form.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
+This API endpoint allows you to create a one-off submission request document using the provided HTML content, with special field tags rendered as a fillable and signable form.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/create-pdf-document-fillable-form-with-html-api" class="link">Create PDF document fillable form with HTML</a>
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions/html")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/submissions/html")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"name\":\"Test Submission Document\",\"documents\":[{\"name\":\"Test Document\",\"html\":\"<p>Lorem Ipsum is simply dummy text of the\\n<text-field\\n  name=\\\"Industry\\\"\\n  role=\\\"First Party\\\"\\n  required=\\\"false\\\"\\n  style=\\\"width: 80px; height: 16px; display: inline-block; margin-bottom: -4px\\\">\\n</text-field>\\nand typesetting industry</p>\\n\"}],\"submitters\":[{\"role\":\"First Party\",\"email\":\"john.doe@example.com\"}]}")
@@ -3129,11 +3129,11 @@ HttpResponse<String> response = Unirest.post("https://api.bsign.com/submissions/
 
 ### Create a template from PDF
 
-The API endpoint provides the functionality to create a fillable document template for a PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.bsign.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.bsign.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.bsign.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
+The API endpoint provides the functionality to create a fillable document template for a PDF file. Use <code>{{Field Name;role=Signer1;type=date}}</code> text tags to define fillable fields in the document. See <a href="https://www.docuseal.com/examples/fieldtags.pdf" target="_blank" class="link font-bold">https://www.docuseal.com/examples/fieldtags.pdf</a> for more text tag formats. Or specify the exact pixel coordinates of the document fields using `fields` param.<br><b>Related Guides</b><br><a href="https://www.docuseal.com/guides/use-embedded-text-field-tags-in-the-pdf-to-create-a-fillable-form" class="link">Use embedded text field tags to create a fillable form</a>
 
 
 ```java
-HttpResponse<String> response = Unirest.post("https://api.bsign.com/templates/pdf")
+HttpResponse<String> response = Unirest.post("https://api.docuseal.com/templates/pdf")
   .header("X-Auth-Token", "API_KEY")
   .header("content-type", "application/json")
   .body("{\"name\":\"Test PDF\",\"documents\":[{\"name\":\"string\",\"file\":\"base64\",\"fields\":[{\"name\":\"string\",\"areas\":[{\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"page\":1}]}]}]}")

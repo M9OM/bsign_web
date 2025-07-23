@@ -5,7 +5,7 @@ class SendTestWebhookRequestJob
 
   sidekiq_options retry: 0
 
-  USER_AGENT = 'bsign.com Webhook'
+  USER_AGENT = 'DocuSeal.com Webhook'
 
   def perform(params = {})
     submitter = Submitter.find(params['submitter_id'])

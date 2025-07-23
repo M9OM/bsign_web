@@ -37,7 +37,7 @@ module Submissions
       bold_italic: FONT_BOLD_NAME
     }.freeze
 
-    SIGN_REASON = 'Signed by %<name>s with bsign.com'
+    SIGN_REASON = 'Signed by %<name>s with DocuSeal.com'
 
     RTL_REGEXP = TextUtils::RTL_REGEXP
 
@@ -620,7 +620,7 @@ module Submissions
 
       pdf.trailer.info[:Creator] = info_creator
 
-      if bsign.pdf_format == 'pdf/a-3b'
+      if Docuseal.pdf_format == 'pdf/a-3b'
         pdf.task(:pdfa, level: '3b')
         pdf.config['font.map'] = PDFA_FONT_MAP
       end
@@ -816,7 +816,7 @@ module Submissions
       reason_name = submitter.email || submitter.name || submitter.phone
 
       config =
-        if bsign.multitenant?
+        if Docuseal.multitenant?
           AccountConfig.where(account: submitter.account, key: AccountConfig::ESIGNING_PREFERENCE_KEY)
                        .first_or_initialize(value: 'single')
         else
@@ -835,7 +835,7 @@ module Submissions
     end
 
     def info_creator
-      "#{bsign.product_name} (#{bsign::PRODUCT_URL})"
+      "#{Docuseal.product_name} (#{Docuseal::PRODUCT_URL})"
     end
 
     def detached_signature?(_submitter)

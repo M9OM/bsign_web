@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 
-  if !bsign.multitenant? && defined?(Sidekiq::Web)
+  if !Docuseal.multitenant? && defined?(Sidekiq::Web)
     authenticated :user, ->(u) { u.sidekiq? } do
       mount Sidekiq::Web => '/jobs'
     end
@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'manifest' => 'pwa#manifest'
 
   devise_for :users,
-             path: '/', only: %i[sessions registrations passwords omniauth_callbacks],
+             path: '/', only: %i[sessions passwords omniauth_callbacks],
              controllers: begin
                options = { sessions: 'sessions', passwords: 'passwords' }
                options[:omniauth_callbacks] = 'omniauth_callbacks' if User.devise_modules.include?(:omniauthable)
@@ -76,7 +76,7 @@ Rails.application.routes.draw do
   end
   resources :submitters, only: %i[edit update]
   resources :console_redirect, only: %i[index]
-  resources :, only: %i[index], controller: 'console_redirect'
+  resources :upgrade, only: %i[index], controller: 'console_redirect'
   resources :manage, only: %i[index], controller: 'console_redirect'
   resource :testing_account, only: %i[show destroy]
   resources :testing_api_settings, only: %i[index]
@@ -116,7 +116,7 @@ Rails.application.routes.draw do
   resource :blobs_proxy, only: %i[show], path: '/blobs_proxy/:signed_uuid/*filename',
                          controller: 'api/active_storage_blobs_proxy'
 
-  if bsign.multitenant?
+  if Docuseal.multitenant?
     resource :blobs_proxy_legacy, only: %i[show],
                                   path: '/blobs/proxy/:signed_id/*filename',
                                   controller: 'api/active_storage_blobs_proxy_legacy',
@@ -162,7 +162,7 @@ Rails.application.routes.draw do
   end
 
   scope '/settings', as: :settings do
-    unless bsign.multitenant?
+    unless Docuseal.multitenant?
       resources :storage, only: %i[index create], controller: 'storage_settings'
       resources :search_entries_reindex, only: %i[create]
       resources :sms, only: %i[index], controller: 'sms_settings'
@@ -200,3 +200,6 @@ Rails.application.routes.draw do
 
   ActiveSupport.run_load_hooks(:routes, self)
 end
+
+
+

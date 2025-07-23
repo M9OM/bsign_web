@@ -7,7 +7,7 @@ class PasswordsController < Devise::PasswordsController
 
   def create
     super do |resource|
-      resource.errors.clear unless bsign.multitenant?
+      resource.errors.clear unless Docuseal.multitenant?
     end
   end
 

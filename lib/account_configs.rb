@@ -28,7 +28,7 @@ module AccountConfigs
   def find_for_account(account, key)
     configs = account.account_configs.find_by(key:)
 
-    configs ||= Account.order(:id).first.account_configs.find_by(key:) unless bsign.multitenant?
+    configs ||= Account.order(:id).first.account_configs.find_by(key:) unless Docuseal.multitenant?
 
     configs
   end

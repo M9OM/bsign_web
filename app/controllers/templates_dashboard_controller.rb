@@ -48,9 +48,9 @@ class TemplatesDashboardController < ApplicationController
     rel = templates.active
 
     if params[:q].blank?
-      if bsign.multitenant? ? current_account.testing? : current_account.linked_account_account
+      if Docuseal.multitenant? ? current_account.testing? : current_account.linked_account_account
         shared_account_ids = [current_user.account_id]
-        shared_account_ids << TemplateSharing::ALL_ID if !bsign.multitenant? && !current_account.testing?
+        shared_account_ids << TemplateSharing::ALL_ID if !Docuseal.multitenant? && !current_account.testing?
 
         shared_template_ids = TemplateSharing.where(account_id: shared_account_ids).select(:template_id)
 

@@ -38,7 +38,7 @@ module Templates
   end
 
   def search(current_user, templates, keyword)
-    if bsign.fulltext_search?
+    if Docuseal.fulltext_search?
       fulltext_search(current_user, templates, keyword)
     else
       plain_search(templates, keyword)

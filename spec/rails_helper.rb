@@ -76,7 +76,7 @@ RSpec.configure do |config|
   end
 
   config.before(multitenant: true) do
-    allow(bsign).to receive(:multitenant?).and_return(true)
+    allow(Docuseal).to receive(:multitenant?).and_return(true)
   end
 end
 

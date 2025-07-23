@@ -19,7 +19,7 @@ if ENV['RAILS_ENV'] == 'production'
     require 'dotenv'
     require 'securerandom'
 
-    dotenv_path = "#{ENV.fetch('WORKDIR', '.')}/bsign.env"
+    dotenv_path = "#{ENV.fetch('WORKDIR', '.')}/docuseal.env"
 
     unless File.exist?(dotenv_path)
       default_env = <<~TEXT

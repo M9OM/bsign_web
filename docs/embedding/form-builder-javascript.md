@@ -3,16 +3,16 @@
 ### Example Code
 
 ```javascript
-<script src="https://bsign.com/js/builder.js"></script>
+<script src="https://docuseal.com/js/builder.js"></script>
 
-<bsign-builder
+<docuseal-builder
   data-token="<%= JWT.encode({
     user_email: '{{admin_user_email}}',
     integration_email: '{{signer_email}}',
     name: 'Integration W-9 Test Form',
     document_urls: ['https://www.irs.gov/pub/irs-pdf/fw9.pdf'],
   }, '{{api_key}}') %>">
-</bsign-builder>
+</docuseal-builder>
 
 ```
 
@@ -74,7 +74,7 @@
   "data-host": {
     "type": "string",
     "required": false,
-    "description": "bsign host domain name. Only use this attribute if you are using the on-premises bsign installation or bsign.eu Cloud.",
+    "description": "DocuSeal host domain name. Only use this attribute if you are using the on-premises DocuSeal installation or docuseal.eu Cloud.",
     "example": "yourdomain.com"
   },
   "data-roles": {
@@ -436,7 +436,7 @@
     "type": "string",
     "required": false,
     "default": "{}",
-    "description": "JSON encoded string that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/bsign/blob/master/app/javascript/template_builder/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">template_builder/i18n.js</a> for available i18n keys."
+    "description": "JSON encoded string that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/docuseal/blob/master/app/javascript/template_builder/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">template_builder/i18n.js</a> for available i18n keys."
   },
   "data-language": {
     "type": "string",
@@ -467,31 +467,31 @@
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered on loading the form builder template data.",
-    "example": "document.querySelector('bsign-builder').addEventListener('load', (e) => e.detail)"
+    "example": "document.querySelector('docuseal-builder').addEventListener('load', (e) => e.detail)"
   },
   "upload": {
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered on uploading a document to the template.",
-    "example": "document.querySelector('bsign-builder').addEventListener('upload', (e) => e.detail)"
+    "example": "document.querySelector('docuseal-builder').addEventListener('upload', (e) => e.detail)"
   },
   "send": {
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered on sending documents for signature to recipients.",
-    "example": "document.querySelector('bsign-builder').addEventListener('send', (e) => e.detail)"
+    "example": "document.querySelector('docuseal-builder').addEventListener('send', (e) => e.detail)"
   },
   "change": {
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered every time a change to the template is made.",
-    "example": "document.querySelector('bsign-builder').addEventListener('change', (e) => e.detail)"
+    "example": "document.querySelector('docuseal-builder').addEventListener('change', (e) => e.detail)"
   },
   "save": {
     "type": "event",
     "required": false,
     "description": "Custom event to be triggered on saving changes of the template form.",
-    "example": "document.querySelector('bsign-builder').addEventListener('save', (e) => e.detail)"
+    "example": "document.querySelector('docuseal-builder').addEventListener('save', (e) => e.detail)"
   }
 }
 ```

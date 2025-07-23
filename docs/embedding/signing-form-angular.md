@@ -4,7 +4,7 @@
 
 ```angular
 import { Component } from '@angular/core';
-import { DocusealFormComponent } from '@bsign/angular';
+import { DocusealFormComponent } from '@docuseal/angular';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +12,10 @@ import { DocusealFormComponent } from '@bsign/angular';
   imports: [DocusealFormComponent],
   template: `
     <div class="app">
-      <bsign-form
-        [src]="'https://bsign.com/d/{{template_slug}}'"
+      <docuseal-form
+        [src]="'https://docuseal.com/d/{{template_slug}}'"
         [email]="'{{signer_email}}'">
-      </bsign-form>
+      </docuseal-form>
     </div>
   `
 })
@@ -115,7 +115,7 @@ export class AppComponent {}
     "type": "object",
     "required": false,
     "default": "{}",
-    "description": "Object that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/bsign/blob/master/app/javascript/submission_form/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">submission_form/i18n.js</a> for available i18n keys."
+    "description": "Object that contains i18n keys to replace the default UI text with custom values. See <a href=\"https://github.com/docusealco/docuseal/blob/master/app/javascript/submission_form/i18n.js\" class=\"link\" target=\"_blank\" rel=\"nofollow\">submission_form/i18n.js</a> for available i18n keys."
   },
   "goToLast": {
     "type": "boolean",
@@ -162,7 +162,7 @@ export class AppComponent {}
     "type": "string",
     "required": false,
     "description": "URL to redirect to after the submission completion.",
-    "example": "https://bsign.com/success"
+    "example": "https://docuseal.com/success"
   },
   "completedMessage": {
     "type": "object",

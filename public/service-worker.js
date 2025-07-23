@@ -1,9 +1,9 @@
 self.addEventListener('install', () => {
-  console.log('bsign App installed')
+  console.log('DocuSeal App installed')
 })
 
 self.addEventListener('activate', () => {
-  console.log('bsign App activated')
+  console.log('DocuSeal App activated')
 })
 
 self.addEventListener('fetch', (event) => {

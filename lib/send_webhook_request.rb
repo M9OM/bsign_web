@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module SendWebhookRequest
-  USER_AGENT = 'bsign.com Webhook'
+  USER_AGENT = 'DocuSeal.com Webhook'
 
   LOCALHOSTS = %w[0.0.0.0 127.0.0.1 localhost].freeze
 
@@ -21,7 +21,7 @@ module SendWebhookRequest
       Addressable::URI.parse(webhook_url.url).normalize
     end
 
-    if bsign.multitenant?
+    if Docuseal.multitenant?
       raise HttpsError, 'Only HTTPS is allowed.' if uri.scheme != 'https' &&
                                                     !AccountConfig.exists?(key: :allow_http,
                                                                            account_id: webhook_url.account_id)

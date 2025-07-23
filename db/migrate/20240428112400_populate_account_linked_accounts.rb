@@ -10,7 +10,7 @@ class PopulateAccountLinkedAccounts < ActiveRecord::Migration[7.1]
   end
 
   def up
-    return if bsign.multitenant?
+    return if Docuseal.multitenant?
 
     MigrationAccount.order(:id).each do |account|
       next if account.id == 1

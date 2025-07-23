@@ -1,5 +1,5 @@
 {
-  "name": "bsign",
+  "name": "docuseal",
   "private": true,
   "dependencies": {
     "@babel/core": "7.21.8",
